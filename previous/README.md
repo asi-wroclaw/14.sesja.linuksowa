@@ -1,1 +1,0 @@
-# Stare strony Sesji Linuksowej 
