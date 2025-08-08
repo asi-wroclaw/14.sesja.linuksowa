@@ -97,14 +97,6 @@ jQuery(document).ready(function($){
 		insertbgs();
 	});
 
-//GA
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-73387544-1', 'auto');
-ga('send', 'pageview');
 
 mobileAndTabletcheck = function() {
   var check = false;
@@ -112,56 +104,6 @@ mobileAndTabletcheck = function() {
   return check;
 };
 
-
-/*
-function replaceForm(form_text, form_id="#form_rejestracja")
-{
-  $( form_id ).replaceWith( '<p style="text-align: center; font-weight: bold; color: #F00">' + form_text + '</p>' );
-}
-
-$(document).ready(function() {
-  var frm = $('#form_rejestracja');
-  frm.submit(function (ev)
-  {
-    $.ajax(
-    {
-      type: frm.attr('method'),
-      url: frm.attr('action'),
-      data: frm.serialize(),
-      error: function(request, textStatus, errorThrown)
-      {
-        var err_registered = "Ten adres został juz zarejestrowany";
-        var err_unknown = "Wystąpił błąd. Prosimy spróbować ponownie, a jeśli się powtórzy - skontaktować się z nami.";
-
-        if(window.location.href.indexOf("en") > -1) //wersja ang strony
-        {
-          err_registered = "This adress has been submitted already!";
-          err_unknown = "An error occured! Please try again, and if the issue still persists - contact us.";
-        }
-
-        if(request.status == 400)
-        {
-          replaceForm(err_registered);
-        }
-        else
-        {
-          replaceForm(err_unknown);
-        }
-      },
-      success: function (data)
-      {
-        var err_success = "Dziękujemy za rejestrację!";
-        if(window.location.href.indexOf("en") > -1) //wersja ang strony
-        {
-          err_success = "Thank you for signing up!";
-        }
-          replaceForm(err_success);
-      }
-    });
-    ev.preventDefault();
-  });
-});
-*/
 //mapy googla
 google.maps.event.addDomListener(window, "load", init);
 function init()

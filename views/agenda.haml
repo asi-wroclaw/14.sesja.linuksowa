@@ -35,7 +35,7 @@
       %span#agenda.anchor-jump-link
       .con-content
         %h2.bg-text="Agenda"
-        %h2.spacer="&nbsp;"
+        %h2.spacer!="&nbsp;"
         %h3
           %span.data=t.agenda.saturday.date
           =t.agenda.saturday.day
@@ -43,7 +43,7 @@
           %img{:src => t.agenda.lpi.photo}
           .opis
             .tytul
-              =t.agenda.lpi.title
+              !=t.agenda.lpi.title
             .godzina=t.agenda.lpi.time
         .prelekcja
           %img{:src => t.agenda.saturday.p1.photo}
@@ -52,7 +52,7 @@
               =t.agenda.saturday.p1.title
               %span.lang=t.agenda.saturday.p1.lang
             .godzina=t.agenda.saturday.p1.time
-            .abstrakt=t.agenda.saturday.p1.desc
+            .abstrakt!=t.agenda.saturday.p1.desc
             .autor=t.agenda.speaker + " " + t.agenda.saturday.p1.author
         .prelekcja
           %img{:src => t.agenda.saturday.p2.photo}
@@ -61,7 +61,7 @@
               =t.agenda.saturday.p2.title
               %span.lang=t.agenda.saturday.p2.lang
             .godzina=t.agenda.saturday.p2.time
-            .abstrakt=t.agenda.saturday.p2.desc
+            .abstrakt!=t.agenda.saturday.p2.desc
             .autor=t.agenda.speaker + " " + t.agenda.saturday.p2.author
         .prelekcja
           %img{:src => t.agenda.saturday.p3.photo}
@@ -70,7 +70,7 @@
               =t.agenda.saturday.p3.title
               %span.lang=t.agenda.saturday.p3.lang
             .godzina=t.agenda.saturday.p3.time
-            .abstrakt=t.agenda.saturday.p3.desc
+            .abstrakt!=t.agenda.saturday.p3.desc
             .autor=t.agenda.speaker + " " + t.agenda.saturday.p3.author
         .prelekcja
           .opis
@@ -85,7 +85,7 @@
               =t.agenda.saturday.p5.title
               %span.lang=t.agenda.saturday.p5.lang
             .godzina=t.agenda.saturday.p5.time
-            .abstrakt=t.agenda.saturday.p5.desc
+            .abstrakt!=t.agenda.saturday.p5.desc
             .autor=t.agenda.speaker + " " + t.agenda.saturday.p5.author
         .prelekcja
           %img{:src => t.agenda.saturday.p6.photo}
@@ -94,7 +94,7 @@
               =t.agenda.saturday.p6.title
               %span.lang=t.agenda.saturday.p6.lang
             .godzina=t.agenda.saturday.p6.time
-            .abstrakt=t.agenda.saturday.p6.desc
+            .abstrakt!=t.agenda.saturday.p6.desc
             .autor=t.agenda.speaker + " " + t.agenda.saturday.p6.author
         .prelekcja
           %img{:src => t.agenda.saturday.p7.photo}
@@ -103,7 +103,7 @@
               =t.agenda.saturday.p7.title
               %span.lang=t.agenda.saturday.p7.lang
             .godzina=t.agenda.saturday.p7.time
-            .abstrakt=t.agenda.saturday.p7.desc
+            .abstrakt!=t.agenda.saturday.p7.desc
             .autor=t.agenda.speaker + " " + t.agenda.saturday.p7.author
         .prelekcja
           .opis
@@ -118,7 +118,7 @@
           %img{:src => t.agenda.lpi.photo}
           .opis
             .tytul
-              =t.agenda.lpi.title
+              !=t.agenda.lpi.title
             .godzina=t.agenda.lpi.time
         .prelekcja
           %img{:src => t.agenda.sunday.p1.photo}
@@ -127,8 +127,8 @@
               =t.agenda.sunday.p1.title
               %span.lang=t.agenda.sunday.p1.lang
             .godzina=t.agenda.sunday.p1.time
-            .abstrakt=t.agenda.sunday.p1.desc
-            .autor=t.agenda.speaker + " " + t.agenda.sunday.p1.author
+            .abstrakt!=t.agenda.sunday.p1.desc
+            .autor!="#{t.agenda.speaker} #{t.agenda.sunday.p1.author}"
         .prelekcja
           %img{:src => t.agenda.sunday.p2.photo}
           .opis
@@ -136,7 +136,7 @@
               =t.agenda.sunday.p2.title
               %span.lang=t.agenda.sunday.p2.lang
             .godzina=t.agenda.sunday.p2.time
-            .abstrakt=t.agenda.sunday.p2.desc
+            .abstrakt!=t.agenda.sunday.p2.desc
             .autor=t.agenda.speaker + " " + t.agenda.sunday.p2.author
         .prelekcja
           %img{:src => t.agenda.sunday.p3.photo}
@@ -145,7 +145,7 @@
               =t.agenda.sunday.p3.title
               %span.lang=t.agenda.sunday.p3.lang
             .godzina=t.agenda.sunday.p3.time
-            .abstrakt=t.agenda.sunday.p3.desc
+            .abstrakt!=t.agenda.sunday.p3.desc
             .autor=t.agenda.speaker + " " + t.agenda.sunday.p3.author
         .prelekcja
           .opis
@@ -160,8 +160,8 @@
               =t.agenda.sunday.p5.title
               %span.lang=t.agenda.sunday.p5.lang
             .godzina=t.agenda.sunday.p5.time
-            .abstrakt=t.agenda.sunday.p5.desc
-            .autor=t.agenda.speaker + " " + t.agenda.sunday.p5.author
+            .abstrakt!=t.agenda.sunday.p5.desc
+            .autor!="#{t.agenda.speaker} #{t.agenda.sunday.p5.author}"
         .prelekcja
           %img{:src => t.agenda.sunday.p6.photo}
           .opis
@@ -169,8 +169,8 @@
               =t.agenda.sunday.p6.title
               %span.lang=t.agenda.sunday.p6.lang
             .godzina=t.agenda.sunday.p6.time
-            .abstrakt=t.agenda.sunday.p6.desc
-            .autor=t.agenda.speaker + " " + t.agenda.sunday.p6.author
+            .abstrakt!=t.agenda.sunday.p6.desc
+            .autor!="#{t.agenda.speaker} #{t.agenda.sunday.p6.author}"
         .prelekcja
           %img{:src => t.agenda.sunday.p7.photo}
           .opis
@@ -178,7 +178,7 @@
               =t.agenda.sunday.p7.title
               %span.lang=t.agenda.sunday.p7.lang
             .godzina=t.agenda.sunday.p7.time
-            .abstrakt=t.agenda.sunday.p7.desc
+            .abstrakt!=t.agenda.sunday.p7.desc
             .autor=t.agenda.speaker + " " + t.agenda.sunday.p7.author
     #con-warsztaty.con-bg
       %span#warsztaty.anchor-jump-link
@@ -188,19 +188,19 @@
         .opis
           .half
             %h2=t.workshops.p1.header
-            %p=t.workshops.p1.content
+            %p!=t.workshops.p1.content
           .half
             %h2=t.workshops.p2.header
-            %p=t.workshops.p2.content
+            %p!=t.workshops.p2.content
         .third
           %h2=t.workshops.p3.header
-          %p=t.workshops.p3.content
+          %p!=t.workshops.p3.content
         .third
           %h2=t.workshops.p4.header
-          %p=t.workshops.p4.content
+          %p!=t.workshops.p4.content
         .third
           %h2=t.workshops.p5.header
-          %p=t.workshops.p5.content
+          %p!=t.workshops.p5.content
     #con-lpi.con-bg
       %span#lpi.anchor-jump-link
       .con-content
@@ -211,19 +211,19 @@
           %p=t.lpi.p1.content
         .third
           %h2=t.lpi.p2.header
-          %p=t.lpi.p2.content
+          %p!=t.lpi.p2.content
         .third
           %h2=t.lpi.p3.header
-          %p=t.lpi.p3.content
+          %p!=t.lpi.p3.content
     #con-prelegenci.con-bg
       %span#prelegenci.anchor-jump-link
       .con-content
         %h2.bg-text=t.navigation.speakers
-        %h2.spacer="&nbsp;"
+        %h2.spacer!="&nbsp;"
         .third
           %img{:src => t.speakers.p1.photo}
           %h3=t.speakers.p1.name
-          %span=t.speakers.p1.content
+          %span!=t.speakers.p1.content
         .third
           %img{:src => t.speakers.p2.photo}
           %h3=t.speakers.p2.name
@@ -231,7 +231,7 @@
         .third
           %img{:src => t.speakers.p3.photo}
           %h3=t.speakers.p3.name
-          %span=t.speakers.p3.content
+          %span!=t.speakers.p3.content
         .third
           %img{:src => t.speakers.p4.photo}
           %h3=t.speakers.p4.name
@@ -263,7 +263,7 @@
         .third
           %img{:src => t.speakers.p11.photo}
           %h3=t.speakers.p11.name
-          %span=t.speakers.p11.content
+          %span!=t.speakers.p11.content
         .third
           %img{:src => t.speakers.p12.photo}
           %h3=t.speakers.p12.name

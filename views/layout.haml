@@ -10,7 +10,7 @@
     %meta{:content => t.title, :property => "og:title"}/
     %meta{:content => "http://14.sesja.linuksowa.pl/", :property => "og:url"}/
     %meta{:content => t.meta.description, :property => "og:description"}/
-    %meta{:content => "http://14.sesja.linuksowa.pl//img/logo-opengraph-pl.jpg", :property => "og:image"}/
+    %meta{:content => "http://14.sesja.linuksowa.pl/img/logo-opengraph-pl.jpg", :property => "og:image"}/
     %link{:href => "/css/style.css", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700&subset=latin-ext,latin", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "/css/font-awesome.min.css", :rel => "stylesheet", :type => "text/css"}/
@@ -95,7 +95,7 @@
       %span#agenda.anchor-jump-link
       .con-content
         %h2.bg-text="Agenda"
-        %h2.spacer="&nbsp;"
+        %h2.spacer!="&nbsp;"
         #agenda-sobota
           .half
             %h3
@@ -105,7 +105,7 @@
               .godzina=t.agenda.lpi.time
               .opis
                 .tytul
-                  =t.agenda.lpi.title
+                  !=t.agenda.lpi.title
             .prelekcja
               .godzina=t.agenda.saturday.p1.time
               .opis
@@ -170,14 +170,14 @@
               .godzina=t.agenda.lpi.time
               .opis
                 .tytul
-                  =t.agenda.lpi.title
+                  !=t.agenda.lpi.title
             .prelekcja
               .godzina=t.agenda.sunday.p1.time
               .opis
                 .tytul
                   =t.agenda.sunday.p1.title
                   %span.lang=t.agenda.sunday.p1.lang
-                .autor=t.agenda.sunday.p1.author
+                .autor!=t.agenda.sunday.p1.author
             .prelekcja
               .godzina=t.agenda.sunday.p2.time
               .opis
@@ -205,14 +205,14 @@
                 .tytul
                   =t.agenda.sunday.p5.title
                   %span.lang=t.agenda.sunday.p5.lang
-                .autor=t.agenda.sunday.p5.author
+                .autor!=t.agenda.sunday.p5.author
             .prelekcja
               .godzina=t.agenda.sunday.p6.time
               .opis
                 .tytul
                   =t.agenda.sunday.p6.title
                   %span.lang=t.agenda.sunday.p6.lang
-                .autor=t.agenda.sunday.p6.author
+                .autor!=t.agenda.sunday.p6.author
             .prelekcja
               .godzina=t.agenda.sunday.p7.time
               .opis
@@ -230,19 +230,19 @@
         .opis
           .half
             %h2=t.workshops.p1.header
-            %p=t.workshops.p1.content
+            %p!=t.workshops.p1.content
           .half
             %h2=t.workshops.p2.header
-            %p=t.workshops.p2.content
+            %p!=t.workshops.p2.content
         .third
           %h2=t.workshops.p3.header
-          %p=t.workshops.p3.content
+          %p!=t.workshops.p3.content
         .third
           %h2=t.workshops.p4.header
-          %p=t.workshops.p4.content
+          %p!=t.workshops.p4.content
         .third
           %h2=t.workshops.p5.header
-          %p=t.workshops.p5.content
+          %p!=t.workshops.p5.content
     #con-lpi.con-bg
       %span#lpi.anchor-jump-link
       .con-content
@@ -253,19 +253,19 @@
           %p=t.lpi.p1.content
         .third
           %h2=t.lpi.p2.header
-          %p=t.lpi.p2.content
+          %p!=t.lpi.p2.content
         .third
           %h2=t.lpi.p3.header
-          %p=t.lpi.p3.content
+          %p!=t.lpi.p3.content
     #con-prelegenci.con-bg
       %span#prelegenci.anchor-jump-link
       .con-content
         %h2.bg-text=t.navigation.speakers
-        %h2.spacer="&nbsp;"
+        %h2.spacer!="&nbsp;"
         .third
           %img{:src => t.speakers.p1.photo}
           %h3=t.speakers.p1.name
-          %span=t.speakers.p1.content
+          %span!=t.speakers.p1.content
         .third
           %img{:src => t.speakers.p2.photo}
           %h3=t.speakers.p2.name
@@ -273,7 +273,7 @@
         .third
           %img{:src => t.speakers.p3.photo}
           %h3=t.speakers.p3.name
-          %span=t.speakers.p3.content
+          %span!=t.speakers.p3.content
         .third
           %img{:src => t.speakers.p4.photo}
           %h3=t.speakers.p4.name
@@ -305,7 +305,7 @@
         .third
           %img{:src => t.speakers.p11.photo}
           %h3=t.speakers.p11.name
-          %span=t.speakers.p11.content
+          %span!=t.speakers.p11.content
         .third
           %img{:src => t.speakers.p12.photo}
           %h3=t.speakers.p12.name
@@ -358,7 +358,7 @@
           .logo-rst
             %a{:href => "http://rst.com.pl/"}
               %img{:src => "/img/loga/logo-rst.png"}/
-            %span.logo-spacer="&nbsp;"
+            %span.logo-spacer!="&nbsp;"
             %a{:href => "http://tieto.pl/"}
               %img{:src => "/img/loga/logo-tieto.png"}/
           .logo-lpi
