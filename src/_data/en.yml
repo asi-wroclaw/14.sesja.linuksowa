@@ -4,7 +4,7 @@ meta:
   description: "Sesja Linuksowa to największa w Polsce konferencja poświęcona rozwiązaniom Open Source oraz najnowszym trendom w systemach z rodziny GNU/Linux."
   locale: "en_US"
 navigation:
-  logo: "/img/logo-male-en.png"
+  logo: "img/logo-male-en.png"
   about: "About"
   cfp: "Call for Papers"
   agenda: "Agenda"
@@ -21,13 +21,13 @@ navigation:
   patrons: "Patrons"
   home_url: "/en"
   agenda_url: "/en/agenda"
-  lang_url: "/pl"
-  lang_agenda_url: "/pl/agenda"
-  lang_flag: "/img/icon-pl.png"
+  lang_url: "/"
+  lang_agenda_url: "/agenda"
+  lang_flag: "img/icon-pl.png"
   lang_text: "Wersja polska"
   back_to_home: "Back to home page"
 description:
-  logo: "/img/logo-duze-en.png"
+  logo: "img/logo-duze-en.png"
 contact:
   form:
     name: "Name and surname"
@@ -68,22 +68,18 @@ agenda:
     day: ".Saturday"
     p4:
       title: "Lunch break"
+      time: "13:00-14:00"
   sunday:
     date: "May 7th"
     day: ".Sunday"
     p4:
       title: "Lunch break"
+      time: "13:00-14:00"
     p6:
       desc: "I do not want to approach the subject from a usual perspective covering technical details. Instead based on my experience from software configuration and integration area, I would like to present few stories which will give examples how projects can actually profit from moving towards YOCTO driven approaches and which problems YOCTO can actually help to solve."
 speakers:
-  p1:
-    content: "Krzysztof is a PhD student at Warsaw University of Technology. He works as Kernel and System Developer at Samsung R&D Institute Poland. Since 2013 involved in USB support development in Tizen OS. Maintainer of libusbgx - library for USB gadgets management through ConfigFS. Open Source enthusiast and speaker at several Linux and Open Source Conferences. "
-  p6:
-    content: "Fabian Thorns is the Director of Certification Development at Linux Professional Institute, LPI. He is M.Sc. Business Information Systems, a regular speaker at open source events and the author of numerous articles and books."
   p11:
     content: "SCM Engineer at Nokia, former vice-chairman of Academic IT Association, graduate of Wroclaw University of Science and Technology.<br />Uses Linux as server environment for years, at the same time hating it as desktop system."
-  p12:
-    content: "DevOps at OVH.pl - daily, PhD student at Wrocław University of Science and Technology - occasionally, Dungeon Master - in free time, IKEA's furniture assembling lover - anytime :-) "
   p13:
     content: "I work for NOKIA for over 5 years within SCM related areas. I have few interests here and there, especially in astronomy, sci-fi books, history and video games."
 workshops:
@@ -101,7 +97,7 @@ workshops:
     content: "Workshops will be held in two parts - during saturday and sunday, from 11:30AM.<br /><center>Registration is closed. Qualified participants will be informed via e-mail.</center>"
   p5:
     header: "Coaches"
-    content: "Workshops will be held by <b>Łukasz Gardoń</b> and <b>Patryk Czajkowski</b> - employees of Nokia<br /><center><img style=\"max-width: 50%\" src=\"/img/loga/logo-nokia.svg\" /></center>"
+    content: "Workshops will be held by <b>Łukasz Gardoń</b> and <b>Patryk Czajkowski</b> - employees of Nokia"
 live:
   title: "Talks from 14th Linux Session"
   p1:
@@ -138,7 +134,7 @@ lpi:
     content: "Participants are asekd to come with a vaild identity document, and LPI-ID, that you can obtain by registering <a href=\"https://cs.lpi.org/caf/Xamman/register\">HERE</a>"
   p3:
     header: "More info"
-    content: "Details about LPI exams are available in <a href=\"pdf/lpi_pl.pdf\">this document.</a><br /><center><img style=\"max-width: 40%\" src=\"/img/loga/logo-lpi.png\"></center>"
+    content: "Details about LPI exams are available in <a href=\"pdf/lpi_pl.pdf\">this document.</a>"
 sponsorship:
     content: "Would you like to support us? Here's what we can offer our sponsors!"
     link: "Sponsorship offer"

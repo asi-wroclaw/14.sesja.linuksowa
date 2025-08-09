@@ -28,7 +28,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-a:visited {}
+/* a:visited {} */
 
 /* OLD IE FIX */
 a img {
@@ -554,7 +554,7 @@ a img {
 #con-wspolpraca {
 	height: 40vh;
 	display: table;
-	background: url('/img/tla/bg_oferta.jpg') center no-repeat;
+	background: url('../img/tla/bg_oferta.jpg') center no-repeat;
 	background-size: cover;
 }
 
@@ -617,9 +617,9 @@ a img {
 	overflow: hidden;
 }
 
-#con-sponsorzy {
-	/* //	background-color: #EEE; */
-}
+/* #con-sponsorzy {
+	//	background-color: #EEE;
+} */
 
 #con-sponsorzy .loga div {
 	padding-bottom: 2em;
@@ -671,7 +671,7 @@ a img {
 /* kontener formularza kontaktowego (Kontakt) */
 #con-kontakt {
 	/* background-color: #EEE;  */
-	background: #FFF url('/img/bg_pingwin.png') right top no-repeat;
+	background: #FFF url('../img/bg_pingwin.png') right top no-repeat;
 }
 
 #con-kontakt .con-content {

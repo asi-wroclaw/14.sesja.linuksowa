@@ -1,0 +1,27 @@
+{% if t.dojazd %}
+<div id="con-dojazd" class="con-bg">
+    <span id="dojazd" class="anchor-jump-link"></span>
+    <div class="con-content">
+        <h2 class="bg-text">{{ t.navigation.dojazd }}</h2>
+        <h2 class="spacer">&nbsp;</h2>
+        {% if t.dojazd.p1 %}
+        <div class="third">
+            <h2>{{ t.dojazd.p1.header }}</h2>
+            <p>{{ t.dojazd.p1.content }}</p>
+        </div>
+        {% endif %}
+        {% if t.dojazd.p2 %}
+        <div class="third">
+            <h2>{{ t.dojazd.p2.header }}</h2>
+            <p>{{ t.dojazd.p2.content }}</p>
+        </div>
+        {% endif %}
+        {% if t.dojazd.p3 %}
+        <div class="third">
+            <h2>{{ t.dojazd.p3.header }}</h2>
+            <p>{{ t.dojazd.p3.content }}</p>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endif %}

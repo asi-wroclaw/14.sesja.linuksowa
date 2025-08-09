@@ -1,5 +1,7 @@
-.sass-cache
+.DS_Store
 .bundle
-tmp/
-log/
-start.sh
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

@@ -1,0 +1,41 @@
+{% if t.workshops %}
+<div id="con-warsztaty" class="con-bg">
+    <span id="warsztaty" class="anchor-jump-link"></span>
+    <div class="con-content">
+        <h2 class="bg-text">{{ t.navigation.workshops }}</h2>
+        <h2 class="spacer">&nbsp;</h2>
+        {% if t.workshops.p1 or t.workshops.p2 %}
+        <div class="opis">
+            {% if t.workshops.p1 %}
+            <div class="half">
+                <h2>{{ t.workshops.p1.header }}</h2>
+                <p>{{ t.workshops.p1.content }}</p>
+            </div>
+            {% endif %}
+            {% if t.workshops.p2 %}
+            <div class="half">
+                <h2>{{ t.workshops.p2.header }}</h2>
+                <p>{{ t.workshops.p2.content }}</p>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+        {% for i in (3..5) %}
+        {% assign key = 'p' | append: i %}
+        {% assign workshop = t.workshops[key] %}
+        {% if workshop %}
+        <div class="third">
+            <h2>{{ workshop.header }}</h2>
+            {% if key == 'p5' %}
+            <p>{{ workshop.content }}<br />
+                <center><img style="max-width: 50%" src="{{ '/img/loga/logo-nokia.svg' | relative_url }}" /></center>
+            </p>
+            {% else %}
+            <p>{{ workshop.content }}</p>
+            {% endif %}
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+{% endif %}

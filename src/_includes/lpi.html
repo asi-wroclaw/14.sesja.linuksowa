@@ -1,0 +1,27 @@
+{% if t.lpi %}
+<div id="con-lpi" class="con-bg">
+    <span id="lpi" class="anchor-jump-link"></span>
+    <div class="con-content">
+        <h2 class="bg-text">{{ t.navigation.lpi }}</h2>
+        <h2 class="spacer">&nbsp;</h2>
+        {% if t.lpi.p1 %}
+        <div class="third">
+            <h2>{{ t.lpi.p1.header }}</h2>
+            <p>{{ t.lpi.p1.content }}</p>
+        </div>
+        {% endif %}
+        {% if t.lpi.p2 %}
+        <div class="third">
+            <h2>{{ t.lpi.p2.header }}</h2>
+            <p>{{ t.lpi.p2.content }}</p>
+        </div>
+        {% endif %}
+        {% if t.lpi.p3 %}
+        <div class="third">
+            <h2>{{ t.lpi.p3.header }}</h2>
+            <p>{{ t.lpi.p3.content }}<br /><center><img style="max-width: 40%" src="{{ '/img/loga/logo-lpi.png' | relative_url }}" /></center></p>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endif %}

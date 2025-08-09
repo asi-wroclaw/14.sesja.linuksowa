@@ -1,0 +1,78 @@
+<div id="con-agenda" class="con-bg">
+    <span id="agenda" class="anchor-jump-link"></span>
+    <div class="con-content">
+        <h2 class="bg-text">Agenda</h2>
+        <h2 class="spacer">&nbsp;</h2>
+        <div id="agenda-sobota">
+            <div class="half">
+                <h3>
+                    <span class="data">{{ t.agenda.saturday.date }}</span>
+                    {{ t.agenda.saturday.day }}
+                </h3>
+                <div class="prelekcja">
+                    <div class="godzina">{{ t.agenda.lpi.time | default: t_pl.agenda.lpi.time }}</div>
+                    <div class="opis">
+                        <div class="tytul">
+                            {{ t.agenda.lpi.title }}
+                        </div>
+                    </div>
+                </div>
+                {% for i in (1..8) %}
+                {% assign key = 'p' | append: i %}
+                {% assign talk = t.agenda.saturday[key] %}
+                {% if talk.time == nil and t_pl.agenda.saturday[key] %}
+                  {% assign talk = t_pl.agenda.saturday[key] %}
+                {% endif %}
+                {% if talk.time %}
+                <div class="prelekcja">
+                    <div class="godzina">{{ talk.time }}</div>
+                    <div class="opis">
+                        <div class="tytul">
+                            {{ talk.title }}
+                            <span class="lang">{{ talk.lang }}</span>
+                        </div>
+                        <div class="autor">{{ talk.author }}</div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            <div class="half">
+                <h3>
+                    <span class="data">{{ t.agenda.sunday.date }}</span>
+                    {{ t.agenda.sunday.day }}
+                </h3>
+                <div class="prelekcja">
+                    <div class="godzina">{{ t.agenda.lpi.time | default: t_pl.agenda.lpi.time }}</div>
+                    <div class="opis">
+                        <div class="tytul">
+                            {{ t.agenda.lpi.title }}
+                        </div>
+                    </div>
+                </div>
+                {% for i in (1..7) %}
+                {% assign key = 'p' | append: i %}
+                {% assign talk = t.agenda.sunday[key] %}
+                {% if talk.time == nil and t_pl.agenda.sunday[key] %}
+                  {% assign talk = t_pl.agenda.sunday[key] %}
+                {% endif %}
+                {% if talk.time %}
+                <div class="prelekcja">
+                    <div class="godzina">{{ talk.time }}</div>
+                    <div class="opis">
+                        <div class="tytul">
+                            {{ talk.title }}
+                            <span class="lang">{{ talk.lang }}</span>
+                        </div>
+                        <div class="autor">{{ talk.author }}</div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="extended-link">
+            <a href="{{ t.navigation.agenda_url | relative_url }}">{{ t.agenda.extended_text | default: t_pl.agenda.extended_text }}</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div id="con-description" class="con-bg">
+    <span id="top" class="anchor-jump-link"></span>
+    {% assign bg_url = '/img/tla/1.jpg' %}
+    <div class="main-bg-container" style="background-image: url('{{ bg_url | relative_url }}')"></div>
+    <div class="con-content">
+        <div class="social">
+            <!-- placeholder social to keep logo centered -->
+            <span>
+                <img src="{{ '/img/squares-empty.png' | relative_url }}" />
+            </span>
+            <span>
+                <img src="{{ '/img/squares-empty.png' | relative_url }}" />
+            </span>
+        </div>
+        <div id="logo-container">
+            <img alt="14. Sesja Linuksowa" src="{{ t.description.logo | relative_url }}" />
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/asi.wroclaw">
+                <img alt="" src="{{ '/img/squares-facebook.png' | relative_url }}" />
+            </a>
+            <a href="https://www.youtube.com/@asi-wroclaw">
+                <img alt="" src="{{ '/img/squares-youtube.png' | relative_url }}" />
+            </a>
+            <a href="https://twitter.com/sesjalinuksowa">
+                <img alt="" src="{{ '/img/squares-twitter.png' | relative_url }}" />
+            </a>
+            <a href="https://plus.google.com/+AkademickieStowarzyszenieInformatycznePWR">
+                <img alt="" src="{{ '/img/squares-google-plus.png' | relative_url }}" />
+            </a>
+        </div>
+    </div>
+</div>

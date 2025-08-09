@@ -1,0 +1,19 @@
+<div id="con-head" class="con-bg">
+    <div class="con-content">
+        <a href="#top">
+            <img src="{{ t.navigation.logo | relative_url }}" />
+        </a>
+        <span id="menu-button" class="fa-bars"></span>
+        <div id="menu-container" class="mobile-hidden">
+            <a href="{{ t.navigation.home_url | relative_url }}">{{ t.navigation.back_to_home }}</a>
+            <a href="#agenda">{{ t.navigation.agenda }}</a>
+            <a href="#warsztaty">{{ t.navigation.workshops }}</a>
+            <a href="#lpi">{{ t.navigation.lpi }}</a>
+            <a href="#prelegenci">{{ t.navigation.speakers }}</a>
+            <a class="lang-switch" href="{{ t.navigation.lang_agenda_url | relative_url }}">
+                <img alt="" src="{{ t.navigation.lang_flag | relative_url }}" />
+                <span class="mobile-only">{{ t.navigation.lang_text }}</span>
+            </a>
+        </div>
+    </div>
+</div>

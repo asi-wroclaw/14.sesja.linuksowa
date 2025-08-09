@@ -1,0 +1,10 @@
+{% if t.sponsorship %}
+<div id="con-wspolpraca" class="con-bg">
+    <span id="wspolpraca" class="anchor-jump-link"></span>
+    <div class="con-content">
+        <h2>{{ t.navigation.sponsorship }}</h2>
+        <h3>{{ t.sponsorship.content }}</h3>
+        <a class="button" href="{{ t.sponsorship.link_href | relative_url }}">{{ t.sponsorship.link }}</a>
+    </div>
+</div>
+{% endif %}

@@ -1,0 +1,31 @@
+# Site settings
+title: "14. Sesja Linuksowa"
+description: >-
+  Sesja Linuksowa to największa w Polsce konferencja poświęcona rozwiązaniom 
+  Open Source oraz najnowszym trendom w systemach z rodziny GNU/Linux.
+
+url: "https://14.sesja.linuksowa.pl"
+
+# baseurl: "" (default) or "/<url>" if using as a collective part on one domain e.g. "edycje.linuksowa.pl/14"
+baseurl: ""
+
+# Directory configuration
+source: src
+destination: _site
+
+# Language configuration
+default_lang: "pl"
+languages: ["pl", "en"]
+
+# Exclude theme assets
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

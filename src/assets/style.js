@@ -22,13 +22,14 @@ const cycleBackgroundImages = () => {
 
 const addBackgroundImageLayers = () => {
 	if (!isMobile()) {
+		const baseUrl = document.querySelector('meta[name="base-url"]')?.content || '';
 		let lastNode = null;
 		for (let i = 2; i <= 9; i++) {
 			const containers = document.querySelectorAll('.main-bg-container');
 			lastNode = containers[containers.length - 1];
 			const div = document.createElement('div');
 			div.className = 'main-bg-container';
-			div.style.backgroundImage = `url('/img/tla/${i}.jpg')`;
+			div.style.backgroundImage = `url('${baseUrl}/img/tla/${i}.jpg')`;
 			lastNode.parentNode.insertBefore(div, lastNode.nextSibling);
 		}
 		cycleBackgroundImages();
@@ -82,7 +83,8 @@ window.addEventListener('load', () => {
 	const mapElement = document.getElementById('map');
 	if (!mapElement || typeof google === 'undefined' || !google.maps) return;
 	const map = new google.maps.Map(mapElement, mapOptions);
-	const image = '/img/map-marker.png';
+	const baseUrl = document.querySelector('meta[name="base-url"]')?.content || '';
+	const image = `${baseUrl}/img/map-marker.png`;
 	new google.maps.Marker({
 		position: myLatLng,
 		map: map,

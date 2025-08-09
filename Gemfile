@@ -1,11 +1,12 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-ruby '~> 3.4.5'
+ruby "~> 3.4.5"
 
-gem 'sinatra', '~> 2.2.4'
-gem 'sinatra-r18n', require: 'sinatra/r18n'
-gem 'better_errors'
-gem 'thin'
-gem 'haml'
-gem 'bigdecimal'
-gem 'base64'
+gem "jekyll", "~> 4.4.1"
+
+platforms :windows, :jruby do
+  gem "tzinfo", ">= 1", "< 3"
+  gem "tzinfo-data"
+end
+
+gem "wdm", "~> 0.1", :platforms => [:windows]

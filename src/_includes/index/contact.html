@@ -1,0 +1,13 @@
+<div id="con-kontakt" class="con-bg">
+    <span id="kontakt" class="anchor-jump-link"></span>
+    <div class="con-content">
+        <h2 class="bg-text">{{ t.navigation.contact }}</h2>
+        <h2 class="spacer">&nbsp;</h2>
+        <form action="/" method="POST" role="form">
+            <input id="name" class="form-control" name="name" placeholder="{{ t.contact.form.name }}" type="text" />
+            <input id="email" class="form-control" name="email" placeholder="{{ t.contact.form.email }}" type="email" />
+            <textarea id="content" class="form-control" name="content" placeholder="{{ t.contact.form.content }}" rows="10"></textarea>
+            <input id="sendemail" type="submit" value="{{ t.contact.form.submit }}" />
+        </form>
+    </div>
+</div>

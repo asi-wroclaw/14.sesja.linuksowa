@@ -1,0 +1,101 @@
+<div class="extended-agenda" style="margin-top: 5em">
+    <span id="agenda" class="anchor-jump-link"></span>
+    <div class="con-content">
+        <h2 class="bg-text">Agenda</h2>
+        <h2 class="spacer">&nbsp;</h2>
+        
+        <!-- saturday schedule -->
+        <h3>
+            <span class="data">{{ t.agenda.saturday.date }}</span>
+            {{ t.agenda.saturday.day }}
+        </h3>
+        
+        <!-- LPI saturday -->
+        {% if t.agenda.lpi %}
+        <div class="prelekcja">
+            <img src="{{ t_pl.agenda.lpi.photo | relative_url }}" alt="LPI" />
+            <div class="opis">
+                <div class="tytul">{{ t.agenda.lpi.title }}</div>
+                <div class="godzina">{{ t.agenda.lpi.time | default: t_pl.agenda.lpi.time }}</div>
+            </div>
+        </div>
+        {% endif %}
+        
+        <!-- saturday talks -->
+        {% for i in (1..8) %}
+        {% assign key = 'p' | append: i %}
+        {% assign talk = t.agenda.saturday[key] %}
+        {% if talk.time == nil and t_pl.agenda.saturday[key] %}
+          {% assign talk = t_pl.agenda.saturday[key] %}
+        {% endif %}
+        {% if talk.time %}
+        <div class="prelekcja">
+            {% if talk.photo %}
+            <img src="{{ talk.photo | relative_url }}" alt="{{ talk.author }}" />
+            {% endif %}
+            <div class="opis">
+                <div class="tytul">
+                    {{ talk.title }}
+                    {% if talk.lang %}<span class="lang">{{ talk.lang }}</span>{% endif %}
+                </div>
+                <div class="godzina">{{ talk.time }}</div>
+                {% if talk.desc %}
+                <div class="abstrakt">{{ talk.desc }}</div>
+                {% endif %}
+                {% if talk.author and talk.title != t.agenda.saturday.p4.title and talk.title != t.agenda.saturday.p8.title %}
+                <div class="autor">{{ t.agenda.speaker }} {{ talk.author }}</div>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        
+        <!-- sunday schedule -->
+        <h3>
+            <span class="data">{{ t.agenda.sunday.date }}</span>
+            {{ t.agenda.sunday.day }}
+        </h3>
+        
+        <!-- LPI sunday -->
+        {% if t.agenda.lpi %}
+        <div class="prelekcja">
+            {% if t.agenda.lpi.photo %}
+            <img src="{{ t.agenda.lpi.photo | relative_url }}" alt="LPI" />
+            {% endif %}
+            <div class="opis">
+                <div class="tytul">{{ t.agenda.lpi.title }}</div>
+                <div class="godzina">{{ t.agenda.lpi.time | default: t_pl.agenda.lpi.time }}</div>
+            </div>
+        </div>
+        {% endif %}
+        
+        <!-- sunday talks -->
+        {% for i in (1..7) %}
+        {% assign key = 'p' | append: i %}
+        {% assign talk = t.agenda.sunday[key] %}
+        {% if talk.time == nil and t_pl.agenda.sunday[key] %}
+          {% assign talk = t_pl.agenda.sunday[key] %}
+        {% endif %}
+        {% if talk.time %}
+        <div class="prelekcja">
+            {% if talk.photo %}
+            <img src="{{ talk.photo | relative_url }}" alt="{{ talk.author }}" />
+            {% endif %}
+            <div class="opis">
+                <div class="tytul">
+                    {{ talk.title }}
+                    {% if talk.lang %}<span class="lang">{{ talk.lang }}</span>{% endif %}
+                </div>
+                <div class="godzina">{{ talk.time }}</div>
+                {% if talk.desc %}
+                <div class="abstrakt">{{ talk.desc }}</div>
+                {% endif %}
+                {% if talk.author and talk.title != t.agenda.sunday.p4.title %}
+                <div class="autor">{{ t.agenda.speaker }} {{ talk.author }}</div>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
