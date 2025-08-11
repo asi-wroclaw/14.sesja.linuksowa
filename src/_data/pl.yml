@@ -2,6 +2,7 @@ meta:
   name: "14. Sesja Linuksowa"
   author: "Akademickie Stowarzyszenie Informatyczne"
   description: "Sesja Linuksowa to największa w Polsce konferencja poświęcona rozwiązaniom Open Source oraz najnowszym trendom w systemach z rodziny GNU/Linux."
+  keywords: "Sesja Linuksowa, konferencja, ASI, Akademickie Stowarzyszenie Informatyczne, Wrocław, Open Source, Linux, IT, studenci, programowanie"
   locale: "pl_PL"
 navigation:
   logo: "img/logo-male-pl.webp"

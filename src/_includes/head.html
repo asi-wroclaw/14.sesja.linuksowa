@@ -1,10 +1,13 @@
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
 {% assign lang = page.lang | default: site.default_lang %}
 {% assign t = site.data[lang] %}
 {% assign t_pl = site.data['pl'] %}
+
+<meta name="description" content="{{ t.meta.description }}" />
+<meta name="keywords" content="{{ t.meta.keywords }}" />
+<meta name="author" content="{{ t.meta.author }}" />
 
 <meta name="base-url" content="{{ site.baseurl }}" />
 <meta property="og:site_name" content="{{ t.meta.name }}" />
@@ -14,6 +17,11 @@
 <meta property="og:url" content="{{ site.url }}/" />
 <meta property="og:description" content="{{ t.meta.description }}" />
 <meta property="og:image" content="{{ '/img/logo-opengraph-pl.webp' | relative_url }}" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/img/apple-touch-icon.png' | relative_url }}" />
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/img/favicon-32x32.png' | relative_url }}" />
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/img/favicon-16x16.png' | relative_url }}" />
+<link rel="shortcut icon" type="image/x-icon" href="{{ '/img/favicon.ico' | relative_url }}" />
 
 <link href="{{ '/assets/style.css' | relative_url }}" rel="stylesheet" type="text/css" />
 <link href="{{ '/assets/font-awesome.min.css' | relative_url }}" rel="stylesheet" type="text/css" />
@@ -33,5 +41,6 @@
 <link rel="preload" as="image" href="{{ '/img/squares-google-plus.webp' | relative_url }}" />
 {% endif %}
 
+<link rel="preconnect" href="https://scripts.simpleanalyticscdn.com" />
 
 <title>{{ t.title }}</title>
