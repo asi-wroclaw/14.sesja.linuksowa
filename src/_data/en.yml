@@ -114,7 +114,7 @@ live:
   p5:
     content: "Last year we held 13 talks. We also have been visited again by Klaus Knopper - the creator of Knoppix Linux"
   p6:
-    content: 'More infomration can be found at <a href="http://13.sesja.linuksowa.pl/en.html">13.sesja.linuksowa.pl</a>'
+    content: 'More infomration can be found at <a href="https://13.sesja.linuksowa.pl/en.html">13.sesja.linuksowa.pl</a>'
 dojazd:
   p1:
     header: "Strefa Kultury Studenckiej"
