@@ -70,24 +70,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	addBackgroundImageLayers();
 });
-
-window.addEventListener('load', () => {
-	const myLatLng = { lat: 51.108828, lng: 17.056726 };
-	const mapOptions = {
-		zoom: 15,
-		center: myLatLng,
-		disableDefaultUI: true,
-		scrollwheel: false,
-		draggable: false,
-	};
-	const mapElement = document.getElementById('map');
-	if (!mapElement || typeof google === 'undefined' || !google.maps) return;
-	const map = new google.maps.Map(mapElement, mapOptions);
-	const baseUrl = document.querySelector('meta[name="base-url"]')?.content || '';
-	const image = `${baseUrl}/img/map-marker.png`;
-	new google.maps.Marker({
-		position: myLatLng,
-		map: map,
-		icon: image
-	});
-});
