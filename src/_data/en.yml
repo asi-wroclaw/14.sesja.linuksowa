@@ -4,7 +4,7 @@ meta:
   description: "Sesja Linuksowa to największa w Polsce konferencja poświęcona rozwiązaniom Open Source oraz najnowszym trendom w systemach z rodziny GNU/Linux."
   locale: "en_US"
 navigation:
-  logo: "img/logo-male-en.png"
+  logo: "img/logo-male-en.webp"
   about: "About"
   cfp: "Call for Papers"
   agenda: "Agenda"
@@ -23,11 +23,11 @@ navigation:
   agenda_url: "/en/agenda"
   lang_url: "/"
   lang_agenda_url: "/agenda"
-  lang_flag: "img/icon-pl.png"
+  lang_flag: "img/icon-pl.webp"
   lang_text: "Wersja polska"
   back_to_home: "Back to home page"
 description:
-  logo: "img/logo-duze-en.png"
+  logo: "img/logo-duze-en.webp"
 contact:
   form:
     name: "Name and surname"

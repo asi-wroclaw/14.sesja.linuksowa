@@ -1,32 +1,33 @@
 <div id="con-description" class="con-bg">
     <span id="top" class="anchor-jump-link"></span>
-    {% assign bg_url = '/img/tla/1.jpg' %}
+    {% assign bg_url = '/img/tla/1.webp' %}
     <div class="main-bg-container" style="background-image: url('{{ bg_url | relative_url }}')"></div>
     <div class="con-content">
         <div class="social">
             <!-- placeholder social to keep logo centered -->
             <span>
-                <img src="{{ '/img/squares-empty.png' | relative_url }}" />
+                <img src="{{ '/img/squares-empty.webp' | relative_url }}" width="472" height="457" />
             </span>
             <span>
-                <img src="{{ '/img/squares-empty.png' | relative_url }}" />
+                <img src="{{ '/img/squares-empty.webp' | relative_url }}" width="472" height="457" />
             </span>
         </div>
         <div id="logo-container">
-            <img alt="14. Sesja Linuksowa" src="{{ t.description.logo | relative_url }}" />
+            <img alt="14. Sesja Linuksowa" src="{{ t.description.logo | relative_url }}" 
+                 {% if page.lang == 'en' %}width="1073"{% else %}width="1220"{% endif %} />
         </div>
         <div class="social">
             <a href="https://www.facebook.com/asi.wroclaw" target="_blank" rel="noopener noreferrer">
-                <img alt="" src="{{ '/img/squares-facebook.png' | relative_url }}" />
+                <img alt="" src="{{ '/img/squares-facebook.webp' | relative_url }}" width="472" height="457" />
             </a>
             <a href="https://www.youtube.com/@asi-wroclaw" target="_blank" rel="noopener noreferrer">
-                <img alt="" src="{{ '/img/squares-youtube.png' | relative_url }}" />
+                <img alt="" src="{{ '/img/squares-youtube.webp' | relative_url }}" width="472" height="457" />
             </a>
             <a href="https://twitter.com/sesjalinuksowa" target="_blank" rel="noopener noreferrer">
-                <img alt="" src="{{ '/img/squares-twitter.png' | relative_url }}" />
+                <img alt="" src="{{ '/img/squares-twitter.webp' | relative_url }}" width="472" height="457" />
             </a>
             <a href="https://plus.google.com/+AkademickieStowarzyszenieInformatycznePWR" target="_blank" rel="noopener noreferrer">
-                <img alt="" src="{{ '/img/squares-google-plus.png' | relative_url }}" />
+                <img alt="" src="{{ '/img/squares-google-plus.webp' | relative_url }}" width="472" height="457" />
             </a>
         </div>
     </div>

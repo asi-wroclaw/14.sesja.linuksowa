@@ -29,7 +29,7 @@ const addBackgroundImageLayers = () => {
 			lastNode = containers[containers.length - 1];
 			const div = document.createElement('div');
 			div.className = 'main-bg-container';
-			div.style.backgroundImage = `url('${baseUrl}/img/tla/${i}.jpg')`;
+			div.style.backgroundImage = `url('${baseUrl}/img/tla/${i}.webp')`;
 			lastNode.parentNode.insertBefore(div, lastNode.nextSibling);
 		}
 		cycleBackgroundImages();

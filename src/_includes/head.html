@@ -13,9 +13,25 @@
 <meta property="og:title" content="{{ t.title }}" />
 <meta property="og:url" content="{{ site.url }}/" />
 <meta property="og:description" content="{{ t.meta.description }}" />
-<meta property="og:image" content="{{ '/img/logo-opengraph-pl.jpg' | relative_url }}" />
+<meta property="og:image" content="{{ '/img/logo-opengraph-pl.webp' | relative_url }}" />
 
 <link href="{{ '/assets/style.css' | relative_url }}" rel="stylesheet" type="text/css" />
 <link href="{{ '/assets/font-awesome.min.css' | relative_url }}" rel="stylesheet" type="text/css" />
+
+{% if page.lang == 'en' %}
+<link rel="preload" as="image" href="{{ '/img/logo-duze-en.webp' | relative_url }}" fetchpriority="high" />
+{% else %}
+<link rel="preload" as="image" href="{{ '/img/logo-duze-pl.webp' | relative_url }}" fetchpriority="high" />
+{% endif %}
+
+{% if page.layout == 'default' %}
+<link rel="preload" as="image" href="{{ '/img/tla/1.webp' | relative_url }}" fetchpriority="high" />
+<link rel="preload" as="image" href="{{ '/img/squares-empty.webp' | relative_url }}" />
+<link rel="preload" as="image" href="{{ '/img/squares-facebook.webp' | relative_url }}" />
+<link rel="preload" as="image" href="{{ '/img/squares-youtube.webp' | relative_url }}" />
+<link rel="preload" as="image" href="{{ '/img/squares-twitter.webp' | relative_url }}" />
+<link rel="preload" as="image" href="{{ '/img/squares-google-plus.webp' | relative_url }}" />
+{% endif %}
+
 
 <title>{{ t.title }}</title>

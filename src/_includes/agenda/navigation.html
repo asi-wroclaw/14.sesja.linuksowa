@@ -1,7 +1,11 @@
 <div id="con-head" class="con-bg">
     <div class="con-content">
         <a href="#top">
-            <img src="{{ t.navigation.logo | relative_url }}" />
+            {% if page.lang == 'pl' %}
+            <img src="{{ t.navigation.logo | relative_url }}" width="737" height="161" />
+            {% else %}
+            <img src="{{ t.navigation.logo | relative_url }}" width="639" height="161" />
+            {% endif %}
         </a>
         <span id="menu-button" class="fa-bars"></span>
         <div id="menu-container" class="mobile-hidden">
@@ -11,7 +15,7 @@
             <a href="#lpi">{{ t.navigation.lpi }}</a>
             <a href="#prelegenci">{{ t.navigation.speakers }}</a>
             <a class="lang-switch" href="{{ t.navigation.lang_agenda_url | relative_url }}">
-                <img alt="" src="{{ t.navigation.lang_flag | relative_url }}" />
+                <img alt="" src="{{ t.navigation.lang_flag | relative_url }}" width="300" height="188" />
                 <span class="mobile-only">{{ t.navigation.lang_text }}</span>
             </a>
         </div>

@@ -62,14 +62,6 @@ a img {
 	height: 100%;
 }
 
-/* preload obrazków do zmienaiarki */
-
-.image-preload {
-	width: 0;
-	height: 0;
-	display: none;
-}
-
 /* ogólne regu³y poszczególnych sekcji*/
 
 .con-bg {
@@ -517,7 +509,7 @@ a img {
 
 #con-callforpapers {
 	background-color: #EEE;
-	/* //	background: #eee url('/img/bg_pingwin.png') right top no-repeat; */
+	/* //	background: #eee url('/img/bg_pingwin.webp') right top no-repeat; */
 }
 
 #con-organizatorzy {
@@ -554,7 +546,7 @@ a img {
 #con-wspolpraca {
 	height: 40vh;
 	display: table;
-	background: url('../img/tla/bg_oferta.jpg') center no-repeat;
+	background: url('../img/tla/bg_oferta.webp') center no-repeat;
 	background-size: cover;
 }
 
@@ -671,7 +663,7 @@ a img {
 /* kontener formularza kontaktowego (Kontakt) */
 #con-kontakt {
 	/* background-color: #EEE;  */
-	background: #FFF url('../img/bg_pingwin.png') right top no-repeat;
+	background: #FFF url('../img/bg_pingwin.webp') right top no-repeat;
 }
 
 #con-kontakt .con-content {
