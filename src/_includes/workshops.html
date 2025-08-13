@@ -1,38 +1,31 @@
-{% if t.workshops %}
+{% if site.data.common.features.workshops_enabled %}
+{% assign workshops = site.data.workshops.workshops %}
 <div id="con-warsztaty" class="con-bg">
     <span id="warsztaty" class="anchor-jump-link"></span>
     <div class="con-content">
-        <h2 class="bg-text">{{ t.navigation.workshops }}</h2>
+        {% assign nav = site.data.navigation.navigation %}
+        <h2 class="bg-text">{{ nav.workshops[page.lang] | default: nav.workshops.pl }}</h2>
         <h2 class="spacer">&nbsp;</h2>
-        {% if t.workshops.p1 or t.workshops.p2 %}
         <div class="opis">
-            {% if t.workshops.p1 %}
+            {% for section in workshops %}
+            {% if section.layout == 'half' %}
             <div class="half">
-                <h2>{{ t.workshops.p1.header }}</h2>
-                <p>{{ t.workshops.p1.content }}</p>
+                <h2>{{ section.header[page.lang] | default: section.header.pl }}</h2>
+                <p>{{ section.content[page.lang] | default: section.content.pl }}</p>
             </div>
             {% endif %}
-            {% if t.workshops.p2 %}
-            <div class="half">
-                <h2>{{ t.workshops.p2.header }}</h2>
-                <p>{{ t.workshops.p2.content }}</p>
-            </div>
-            {% endif %}
+            {% endfor %}
         </div>
-        {% endif %}
-        {% for i in (3..5) %}
-        {% assign key = 'p' | append: i %}
-        {% assign workshop = t.workshops[key] %}
-        {% if workshop %}
+        {% for section in workshops %}
+        {% if section.layout == 'third' %}
         <div class="third">
-            <h2>{{ workshop.header }}</h2>
-            {% if key == 'p5' %}
-            <p>{{ workshop.content }}<br />
-                <center><img style="max-width: 50%" src="{{ '/img/loga/logo-nokia.svg' | relative_url }}" /></center>
+            <h2>{{ section.header[page.lang] | default: section.header.pl }}</h2>
+            <p>
+                {{ section.content[page.lang] | default: section.content.pl }}
+                {% if section.image %}<br />
+                <center><img style="max-width: 50%" src="{{ section.image | relative_url }}" /></center>
+                {% endif %}
             </p>
-            {% else %}
-            <p>{{ workshop.content }}</p>
-            {% endif %}
         </div>
         {% endif %}
         {% endfor %}

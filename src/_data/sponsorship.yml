@@ -1,0 +1,10 @@
+sponsorship:
+  content:
+    pl: "Jesteś zainteresowany współpracą z nami? Zapoznaj się z naszą ofertą sponsorską!"
+    en: "Would you like to support us? Here's what we can offer our sponsors!"
+  link:
+    pl: "Oferta sponsorska"
+    en: "Sponsorship offer"
+  link_href:
+    pl: "pdf/offer_pl.pdf"
+    en: "pdf/offer_en.pdf"

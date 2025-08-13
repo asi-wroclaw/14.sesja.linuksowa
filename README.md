@@ -74,3 +74,11 @@ bundle exec jekyll build
 ```sh
 bundle ui
 ```
+
+### Configuration
+
+To configure the site, update the following files:
+
+- `_config.yml` — Set the site title, description, URL, and base URL.
+- `src/_data/*` — Edit texts, translations, speaker information, and agenda data.
+- `src/img/*` — Add speaker photos and images for partners and sponsors.

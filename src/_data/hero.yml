@@ -1,0 +1,21 @@
+hero:
+  bg: "img/tla/1.webp"
+  logo:
+    pl: "img/logo-duze-pl.webp"
+    en: "img/logo-duze-en.webp"
+  social:
+    - id: facebook
+      url: "https://www.facebook.com/asi.wroclaw"
+      icon: "img/squares-facebook.webp"
+    - id: youtube
+      url: "https://www.youtube.com/@asi-wroclaw"
+      icon: "img/squares-youtube.webp"
+    - id: twitter
+      url: "https://twitter.com/sesjalinuksowa"
+      icon: "img/squares-twitter.webp"
+    - id: googleplus
+      url: "https://plus.google.com/+AkademickieStowarzyszenieInformatycznePWR"
+      icon: "img/squares-google-plus.webp"
+  logo_width:
+    pl: 1220
+    en: 1073

@@ -1,0 +1,42 @@
+workshops:
+  - id: p1
+    layout: half
+    header:
+      pl: "O Yocto"
+      en: "About Yocto"
+    content:
+      pl: "<p>Platforma wbudowana skonstruowana na przełomie 2006 i 2008 roku, przez 3 wykładowców Uniwersytetu Cambridge w celu poprawy umiejętności programistycznych przyszłych studentów, wyprzedając pierwszy nakład w kilka minut.</p><p>Na przełomie kilku lat stał się najpopularniejszą platformą wbudowaną, która daje łatwy dostęp nauki programowania oraz podstaw robotyki za niewielką cenę.</p>"
+      en: "<p>Embedded platform estabilished in years 2006 and 2008 by 3 lecturers from University of Cambridge in order to improve future programming skill of new generation students, the first batch sold out in few minutes.</p><p>During a few shor years it became the worlds most popular embedded platform,which grants the ease of learning programming and basic of robotics for a small price.</p>"
+  - id: p2
+    layout: half
+    header:
+      pl: "Tematyka"
+      en: "Covered topic"
+    content:
+      pl: "<p>Celem warsztatów będzie praktycznie wykorzystanie Yocto do stworzenia dystrybucji Linuksowej dedykowanej dla Raspberry Pi.</p><p>Przedstawimy główne narzędzie Yocto jakim jest BitBake służące do budowy przepisów oraz zarządzaniem zadań.</p><p>Poruszymy temat związany z debugowaniem oraz weryfikowaniem zachowania BitBake.</p><center><b>Agenda i ważne informacje na temat warsztatów: <a href=\"pdf/workshops_pl.pdf\">LINK</a></b></p>"
+      en: "<p>The point of those workshops is the use of  Yocto to create a gnu/linux distro for Raspberry Pi.</p><p>The main Yocto tool will be introduced -BitBake- used to build recipes and task management. Topic of debugging and controlling BitBake will be covered too.</p><p>Workshops will be held in Polish.</p>"
+  - id: p3
+    layout: third
+    header:
+      pl: "Wymagania"
+      en: "Requirements"
+    content:
+      pl: "Warsztaty przeznaczone dla osób o podstawowej wiedzy z zakresu Linuksa.<br />Wprowadzeniem do warsztatu jest wykład <i><b>Yocto Project - stwórzmy własną dystrybucję Linuksa dla systemu wbudowanego!</b></i>"
+      en: "Workshops are designated towards people with basic Linux knowledge.<br />Lecture is the introduction to the workshops <i><b>Yocto Project - stwórzmy własną dystrybucję Linuksa dla systemu wbudowanego!</b></i>"
+  - id: p4
+    layout: third
+    header:
+      pl: "Zapisy"
+      en: "Enrollment"
+    content:
+      pl: "Warsztaty odbędą się dwóch turach - w sobotę i w niedzielę, od godziny 11:30.<br /><center>Zapisy zostały zakończone. Osoby wytypowane do warsztatów powiadomimy mailowo.</center></a></p>"
+      en: "Workshops will be held in two parts - during saturday and sunday, from 11:30AM.<br /><center>Registration is closed. Qualified participants will be informed via e-mail.</center>"
+  - id: p5
+    layout: third
+    header:
+      pl: "Trenerzy"
+      en: "Coaches"
+    content:
+      pl: "Warsztaty poprowadzą <b>Łukasz Gardoń</b> oraz <b>Patryk Czajkowski</b> - pracownicy firmy Nokia"
+      en: "Workshops will be held by <b>Łukasz Gardoń</b> and <b>Patryk Czajkowski</b> - employees of Nokia"
+    image: "/img/loga/logo-nokia.svg"

@@ -1,13 +1,13 @@
+{% assign youtube = site.data.common.youtube %}
 <div id="con-live" class="con-bg">
     <span id="live" class="anchor-jump-link"></span>
     <div class="con-content">
-        <h2 class="bg-text">{{ t.live.title }}</h2>
+        {% assign live = site.data.live.live %}
+        <h2 class="bg-text">{{ live.title[page.lang] | default: live.title.pl }}</h2>
         <h2 class="spacer">&nbsp;</h2>
         <div class="embed-container">
-            <iframe allowfullscreen
-                src="https://www.youtube.com/embed/videoseries?list=PLTvZBPQxCI8E02vvjWjyzS_r3Snanol2g"
-                loading="lazy"
-                style="border: 0"></iframe>
+            <iframe allowfullscreen src="https://www.youtube.com/embed/videoseries?list={{ youtube.playlist_id }}"
+                loading="lazy" style="border: 0"></iframe>
         </div>
     </div>
 </div>

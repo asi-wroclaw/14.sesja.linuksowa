@@ -1,27 +1,15 @@
-{% if t.dojazd %}
+{% assign location = site.data.location.location %}
 <div id="con-dojazd" class="con-bg">
     <span id="dojazd" class="anchor-jump-link"></span>
     <div class="con-content">
-        <h2 class="bg-text">{{ t.navigation.dojazd }}</h2>
+        {% assign nav = site.data.navigation.navigation %}
+        <h2 class="bg-text">{{ nav.dojazd[page.lang] | default: nav.dojazd.pl }}</h2>
         <h2 class="spacer">&nbsp;</h2>
-        {% if t.dojazd.p1 %}
+        {% for section in location %}
         <div class="third">
-            <h2>{{ t.dojazd.p1.header }}</h2>
-            <p>{{ t.dojazd.p1.content }}</p>
+            <h2>{{ section.header[page.lang] | default: section.header.pl }}</h2>
+            <p>{{ section.content[page.lang] | default: section.content.pl }}</p>
         </div>
-        {% endif %}
-        {% if t.dojazd.p2 %}
-        <div class="third">
-            <h2>{{ t.dojazd.p2.header }}</h2>
-            <p>{{ t.dojazd.p2.content }}</p>
-        </div>
-        {% endif %}
-        {% if t.dojazd.p3 %}
-        <div class="third">
-            <h2>{{ t.dojazd.p3.header }}</h2>
-            <p>{{ t.dojazd.p3.content }}</p>
-        </div>
-        {% endif %}
+        {% endfor %}
     </div>
 </div>
-{% endif %}

@@ -1,0 +1,21 @@
+location:
+  - id: p1
+    header:
+      pl: "Strefa Kultury Studenckiej"
+    content:
+      pl: "Budynek SKS znajduje się na terenie kampusu Politechniki Wrocławskiej, przy ulicy Hoene-Wrońskiego 10"
+      en: "Students' Culture Zone is a building located on Wrocław University of Technology campus. The precise address is Hoene-Wrońskiego 10."
+  - id: p2
+    header:
+      pl: "Komunikacją miejską"
+      en: "Public transport"
+    content:
+      pl: "Udajemy się dowolną linią jadącą na węzeł Plac Grunwaldzki, a następnie pokonujemy pieszo około 500 metrów."
+      en: "Use any tram or bus heading to a stop called \"Plac Grunwaldzki\". From the stop you'll have to walk for about 500 meters."
+  - id: p3
+    header:
+      pl: "Samochodem"
+      en: "By car"
+    content:
+      pl: "W obrębie kampusu Politechniki Wrocławskiej dostępne jest wiele miejsc parkingowych."
+      en: "Please contact us after you have registered for the event and we will arrange a free parking spot."

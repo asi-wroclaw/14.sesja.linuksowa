@@ -1,23 +1,27 @@
+{% assign nav = site.data.navigation.navigation %}
 <div id="con-head" class="con-bg">
     <div class="con-content">
         <a href="#top">
             {% if page.lang == 'pl' %}
-            <img src="{{ t.navigation.logo | relative_url }}" width="737" height="161" />
+            <img src="{{ nav.logo.pl | relative_url }}" width="737" height="161" />
             {% else %}
-            <img src="{{ t.navigation.logo | relative_url }}" width="639" height="161" />
+            <img src="{{ nav.logo.en | relative_url }}" width="639" height="161" />
             {% endif %}
         </a>
         <span id="menu-button" class="fa-bars"></span>
         <div id="menu-container" class="mobile-hidden">
-            <a href="#about">{{ t.navigation.about }}</a>
-            <a href="#live">{{ t.navigation.live }}</a>
-            <a href="#agenda">{{ t.navigation.agenda }}</a>
-            <a href="#warsztaty">{{ t.navigation.workshops }}</a>
-            <a href="#sponsorzy">{{ t.navigation.sponsors }}</a>
-            <a href="#kontakt">{{ t.navigation.contact }}</a>
-            <a class="lang-switch" href="{{ t.navigation.lang_url | relative_url }}">
-                <img alt="" src="{{ t.navigation.lang_flag | relative_url }}" width="300" height="188" />
-                <span class="mobile-only">{{ t.navigation.lang_text }}</span>
+            <a href="#about">{{ nav.about[page.lang] }}</a>
+            <a href="#live">{{ nav.live[page.lang] }}</a>
+            <a href="#agenda">{{ nav.agenda[page.lang] }}</a>
+            {% if site.data.common.features.workshops_enabled %}
+            <a href="#warsztaty">{{ nav.workshops[page.lang] }}</a>
+            {% endif %}
+            <a href="#sponsorzy">{{ nav.sponsors[page.lang] }}</a>
+            <a href="#kontakt">{{ nav.contact[page.lang] }}</a>
+            <a class="lang-switch" href="{{ nav.lang_url[page.lang] | relative_url }}">
+                <img alt="" src="{{ nav.lang_flag[page.lang] | relative_url }}" width="300"
+                    height="188" />
+                <span class="mobile-only">{{ nav.lang_text[page.lang] }}</span>
             </a>
         </div>
     </div>

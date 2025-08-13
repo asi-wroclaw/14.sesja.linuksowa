@@ -1,56 +1,18 @@
+{% assign sponsors = site.data.sponsors.sponsors %}
 <div id="con-sponsorzy" class="con-bg">
     <span id="sponsorzy" class="anchor-jump-link"></span>
     <div class="con-content">
-        <h2 class="bg-text">{{ t.navigation.sponsors }}</h2>
+        {% assign nav = site.data.navigation.navigation %}
+        <h2 class="bg-text">{{ nav.sponsors[page.lang] | default: nav.sponsors.pl }}</h2>
         <h2 class="spacer">&nbsp;</h2>
         <div class="loga">
-            <div class="logo-nokia">
-                <a href="https://nokiawroclaw.pl" target="_blank" rel="noopener noreferrer">
-                    <img src="{{ '/img/loga/logo-nokia.svg' | relative_url }}" />
+            {% for sponsor in sponsors %}
+            <div class="logo-{{ sponsor.id }}">
+                <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ sponsor.logo | relative_url }}" />
                 </a>
             </div>
-            <div class="logo-ovh">
-                <a href="https://ovh.pl" target="_blank" rel="noopener noreferrer">
-                    <img src="{{ '/img/loga/logo-ovh.webp' | relative_url }}" />
-                </a>
-            </div>
-            <div class="logo-rst">
-                <a href="https://rst.com.pl/" target="_blank" rel="noopener noreferrer">
-                    <img src="{{ '/img/loga/logo-rst.webp' | relative_url }}" />
-                </a>
-                <span class="logo-spacer">&nbsp;</span>
-                <a href="https://tieto.pl/" target="_blank" rel="noopener noreferrer">
-                    <img src="{{ '/img/loga/logo-tieto.webp' | relative_url }}" />
-                </a>
-            </div>
-            <div class="logo-lpi">
-                <a href="https://www.lpi.org/" target="_blank" rel="noopener noreferrer">
-                    <img src="{{ '/img/loga/logo-lpi.webp' | relative_url }}" />
-                </a>
-            </div>
-            <div class="logo-gl">
-                <a href="https://www.globallogic.com/pl/" target="_blank" rel="noopener noreferrer">
-                    <img src="{{ '/img/loga/logo-gl.svg' | relative_url }}" />
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="con-content">
-        <h2 class="bg-text">{{ t.navigation.patrons }}</h2>
-        <h2 class="spacer">&nbsp;</h2>
-        <div class="loga patroni">
-            <a href="https://programistamag.pl/" target="_blank" rel="noopener noreferrer">
-                <img class="third" src="{{ '/img/loga/patron-programista.webp' | relative_url }}" />
-            </a>
-            <a href="https://chip.pl" target="_blank" rel="noopener noreferrer">
-                <img class="third" src="{{ '/img/loga/patron-chip.webp' | relative_url }}" />
-            </a>
-            <a href="https://www.hswro.org/" target="_blank" rel="noopener noreferrer">
-                <img class="third" src="{{ '/img/loga/patron-hs.webp' | relative_url }}" />
-            </a>
-            <a href="https://pdasite.pl" target="_blank" rel="noopener noreferrer">
-                <img class="third" src="{{ '/img/loga/patron-pdasite.webp' | relative_url }}" />
-            </a>
+            {% endfor %}
         </div>
     </div>
 </div>

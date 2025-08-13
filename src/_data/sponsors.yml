@@ -1,0 +1,25 @@
+sponsors:
+  - id: nokia
+    name: "Nokia"
+    url: "https://nokiawroclaw.pl"
+    logo: "img/loga/logo-nokia.svg"
+  - id: ovh
+    name: "OVH"
+    url: "https://ovh.pl"
+    logo: "img/loga/logo-ovh.webp"
+  - id: rst
+    name: "RST"
+    url: "https://rst.com.pl/"
+    logo: "img/loga/logo-rst.webp"
+  - id: tieto
+    name: "Tieto"
+    url: "https://tieto.pl/"
+    logo: "img/loga/logo-tieto.webp"
+  - id: lpi
+    name: "LPI"
+    url: "https://www.lpi.org/"
+    logo: "img/loga/logo-lpi.webp"
+  - id: gl
+    name: "GlobalLogic"
+    url: "https://www.globallogic.com/pl/"
+    logo: "img/loga/logo-gl.svg"

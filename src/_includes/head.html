@@ -1,21 +1,21 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
-{% assign lang = page.lang | default: site.default_lang %}
-{% assign t = site.data[lang] %}
-{% assign t_pl = site.data['pl'] %}
 
-<meta name="description" content="{{ t.meta.description }}" />
-<meta name="keywords" content="{{ t.meta.keywords }}" />
-<meta name="author" content="{{ t.meta.author }}" />
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign meta = site.data.common.meta[lang] %}
+
+<meta name="description" content="{{ meta.description }}" />
+<meta name="keywords" content="{{ meta.keywords }}" />
+<meta name="author" content="{{ meta.author }}" />
 
 <meta name="base-url" content="{{ site.baseurl }}" />
-<meta property="og:site_name" content="{{ t.meta.name }}" />
-<meta property="og:locale" content="{{ t.meta.locale }}" />
+<meta property="og:site_name" content="{{ meta.name }}" />
+<meta property="og:locale" content="{{ meta.locale }}" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="{{ t.title }}" />
+<meta property="og:title" content="{{ meta.title }}" />
 <meta property="og:url" content="{{ site.url }}/" />
-<meta property="og:description" content="{{ t.meta.description }}" />
+<meta property="og:description" content="{{ meta.description }}" />
 <meta property="og:image" content="{{ '/img/logo-opengraph-pl.webp' | relative_url }}" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/img/apple-touch-icon.png' | relative_url }}" />
@@ -43,4 +43,4 @@
 
 <link rel="preconnect" href="https://scripts.simpleanalyticscdn.com" />
 
-<title>{{ t.title }}</title>
+<title>{{ meta.title }}</title>

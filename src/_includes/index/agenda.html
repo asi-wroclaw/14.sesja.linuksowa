@@ -4,75 +4,34 @@
         <h2 class="bg-text">Agenda</h2>
         <h2 class="spacer">&nbsp;</h2>
         <div id="agenda-sobota">
+            {% assign days = "saturday,sunday" | split: "," %}
+            {% for day in days %}
+            {% assign agenda_items = site.data.agenda[day] %}
+            {% assign agenda_info = site.data.agenda.days[day] %}
             <div class="half">
                 <h3>
-                    <span class="data">{{ t.agenda.saturday.date }}</span>
-                    {{ t.agenda.saturday.day }}
+                    <span class="data">{{ agenda_info.date[page.lang] }}</span>
+                    {{ agenda_info.day[page.lang] }}
                 </h3>
+                {% for item in agenda_items %}
                 <div class="prelekcja">
-                    <div class="godzina">{{ t.agenda.lpi.time | default: t_pl.agenda.lpi.time }}</div>
+                    <div class="godzina">{{ item.time }}</div>
                     <div class="opis">
                         <div class="tytul">
-                            {{ t.agenda.lpi.title }}
+                            {{ item.title[page.lang] | default: item.title.pl }}
+                            {% if item.lang %}<span class="lang">{{ item.lang }}</span>{% endif %}
                         </div>
+                        {% if item.author %}<div class="autor">{{ item.author }}</div>{% endif %}
                     </div>
                 </div>
-                {% for i in (1..8) %}
-                {% assign key = 'p' | append: i %}
-                {% assign talk = t.agenda.saturday[key] %}
-                {% if talk.time == nil and t_pl.agenda.saturday[key] %}
-                  {% assign talk = t_pl.agenda.saturday[key] %}
-                {% endif %}
-                {% if talk.time %}
-                <div class="prelekcja">
-                    <div class="godzina">{{ talk.time }}</div>
-                    <div class="opis">
-                        <div class="tytul">
-                            {{ talk.title }}
-                            <span class="lang">{{ talk.lang }}</span>
-                        </div>
-                        <div class="autor">{{ talk.author }}</div>
-                    </div>
-                </div>
-                {% endif %}
                 {% endfor %}
             </div>
-            <div class="half">
-                <h3>
-                    <span class="data">{{ t.agenda.sunday.date }}</span>
-                    {{ t.agenda.sunday.day }}
-                </h3>
-                <div class="prelekcja">
-                    <div class="godzina">{{ t.agenda.lpi.time | default: t_pl.agenda.lpi.time }}</div>
-                    <div class="opis">
-                        <div class="tytul">
-                            {{ t.agenda.lpi.title }}
-                        </div>
-                    </div>
-                </div>
-                {% for i in (1..7) %}
-                {% assign key = 'p' | append: i %}
-                {% assign talk = t.agenda.sunday[key] %}
-                {% if talk.time == nil and t_pl.agenda.sunday[key] %}
-                  {% assign talk = t_pl.agenda.sunday[key] %}
-                {% endif %}
-                {% if talk.time %}
-                <div class="prelekcja">
-                    <div class="godzina">{{ talk.time }}</div>
-                    <div class="opis">
-                        <div class="tytul">
-                            {{ talk.title }}
-                            <span class="lang">{{ talk.lang }}</span>
-                        </div>
-                        <div class="autor">{{ talk.author }}</div>
-                    </div>
-                </div>
-                {% endif %}
-                {% endfor %}
-            </div>
+            {% endfor %}
         </div>
         <div class="extended-link">
-            <a href="{{ t.navigation.agenda_url | relative_url }}">{{ t.agenda.extended_text | default: t_pl.agenda.extended_text }}</a>
+            <a href="{{ t.navigation.agenda_url | relative_url }}">
+                {{ site.data.agenda.labels.extended_text[page.lang] }}
+            </a>
         </div>
     </div>
 </div>

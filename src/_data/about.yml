@@ -1,0 +1,25 @@
+about:
+  - id: p1
+    icon: "img/ikony/coTo.webp"
+    header:
+      pl: "Czym jest sesja?"
+      en: "What is Linux Session?"
+    content:
+      pl: "Jest to konferencja poświęcona rozwiązaniom Open Source oraz najnowszym trendom w systemach z rodziny GNU/Linux."
+      en: "Linux Session is a conference about Open Source solutions and latest trends in Linux-based systems"
+  - id: p2
+    icon: "img/ikony/jakWyglada.webp"
+    header:
+      pl: "Jak to wygląda?"
+      en: "How does this work?"
+    content:
+      pl: "Udział w Sesji jest darmowy. Co roku na konferencji spotykają się pasjonaci informatyki z całej Polski, aby pogłębić swoją wiedzę i podjąć dyskusję w interesujących ich dziedzinach."
+      en: "Entry is free. Every year enthusiasts and professionals visit us to learn and share their knowledge"
+  - id: p3
+    icon: "img/ikony/cel.webp"
+    header:
+      pl: "Nasz cel"
+      en: "Why?"
+    content:
+      pl: "Naszym celem jest promowanie idei wolnego oprogramowania. Wiemy, że Open Source jest coraz bardziej popularny w rozwiązaniach komercyjnych, jak i domowych. I zależy nam na jego popularyzacji."
+      en: "We want to promote the idea of free software. We know that open source if getting more and more popular in commercial solutions and we want to promote it even more"

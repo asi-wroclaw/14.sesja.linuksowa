@@ -1,10 +1,12 @@
-{% if t.sponsorship %}
+{% assign sponsorship = site.data.sponsorship.sponsorship %}
 <div id="con-wspolpraca" class="con-bg">
     <span id="wspolpraca" class="anchor-jump-link"></span>
     <div class="con-content">
-        <h2>{{ t.navigation.sponsorship }}</h2>
-        <h3>{{ t.sponsorship.content }}</h3>
-        <a class="button" href="{{ t.sponsorship.link_href | relative_url }}">{{ t.sponsorship.link }}</a>
+        {% assign nav = site.data.navigation.navigation %}
+        <h2>{{ nav.sponsorship[page.lang] | default: nav.sponsorship.pl }}</h2>
+        <h3>{{ sponsorship.content[page.lang] | default: sponsorship.content.pl }}</h3>
+        <a class="button"
+            href="{{ sponsorship.link_href[page.lang] | default: sponsorship.link_href.pl | relative_url }}">{{
+            sponsorship.link[page.lang] | default: sponsorship.link.pl }}</a>
     </div>
 </div>
-{% endif %}

@@ -1,0 +1,13 @@
+organizers:
+  - name: "Politechnika Wrocławska"
+    logo: "img/loga/logo-pwr.webp"
+    url: "https://www.pwr.edu.pl"
+  - name: "Manus"
+    logo: "img/loga/logo-manus.webp"
+    url: "https://manus.pl"
+  - name: "Wireless Group"
+    logo: "img/loga/logo-wg.webp"
+    url: "https://wireless-group.pwr.wroc.pl/"
+  - name: "Nomad"
+    logo: "img/loga/logo-nomad.webp"
+    url: "https://wireless-group.pwr.wroc.pl/"

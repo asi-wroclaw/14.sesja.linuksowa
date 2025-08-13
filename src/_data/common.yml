@@ -1,0 +1,28 @@
+meta:
+  pl:
+    name: "14. Sesja Linuksowa"
+    author: "Akademickie Stowarzyszenie Informatyczne"
+    description: "Sesja Linuksowa to największa w Polsce konferencja poświęcona rozwiązaniom Open Source oraz najnowszym trendom w systemach z rodziny GNU/Linux."
+    keywords: "Sesja Linuksowa, konferencja, ASI, Akademickie Stowarzyszenie Informatyczne, Wrocław, Open Source, Linux, IT, studenci, programowanie"
+    locale: "pl_PL"
+    title: "14. Sesja Linuksowa | 6-7 maja 2017 | Wrocław, Polska"
+  en:
+    name: "14th Linux Session"
+    author: "Academic IT Association"
+    description: "The Linux Session is the largest conference in Poland dedicated to Open Source solutions and the latest trends in GNU/Linux systems."
+    keywords: "Sesja Linuksowa, conference, ASI, Akademickie Stowarzyszenie Informatyczne, Wrocław, Open Source, Linux, IT, students, programming"
+    locale: "en_US"
+    title: "14th Linux Session | 6th-7th May 2017 | Wrocław, Poland"
+
+features:
+  workshops_enabled: true
+  lpi_enabled: true
+
+map:
+  bbox: "17.039,51.103,17.075,51.115"
+  marker: "51.108830235544175,17.05674648284912"
+  map: "16/51.10883/17.05675"
+
+youtube:
+  playlist_id: "PLTvZBPQxCI8E02vvjWjyzS_r3Snanol2g"
+

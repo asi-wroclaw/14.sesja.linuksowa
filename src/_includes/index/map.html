@@ -1,6 +1,7 @@
+{% assign map = site.data.common.map %}
 <div id="map" style="position: relative;">
     <iframe width="100%" height="100%"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=17.039,51.103,17.075,51.115&layer=mapnik&marker=51.108830235544175%2C17.05674648284912&map=16/51.10883/17.05675"
+        src="https://www.openstreetmap.org/export/embed.html?bbox={{ map.bbox }}&layer=mapnik&marker={{ map.marker | replace: ',', '%2C' }}&map={{ map.map }}"
         style="border: 0; pointer-events: none;">
     </iframe>
     <div id="map-overlay"

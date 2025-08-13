@@ -1,0 +1,176 @@
+labels:
+  speaker:
+    pl: "Prelegent:"
+    en: "Speaker:"
+  extended_text:
+    pl: "Aby przejść do rozszerzonej agendy (z opisami prelekcji), kliknij tutaj."
+    en: "To see the extended agenda (with talk descriptions), click here."
+days:
+  saturday:
+    date:
+      pl: "6 maja"
+      en: "May 6th"
+    day:
+      pl: ".Sobota"
+      en: ".Saturday"
+  sunday:
+    date:
+      pl: "7 maja"
+      en: "May 7th"
+    day:
+      pl: ".Niedziela"
+      en: ".Sunday"
+saturday:
+  - id: lpi
+    time: "08:30-09:45"
+    title:
+      pl: "<i>Egzamin LPI</i>"
+      en: "<i>LPI Exam</i>"
+    desc:
+      pl: ""
+      en: ""
+    photo: "img/loga/logo-lpi.webp"
+  - id: p1
+    time: "10:00-11:00"
+    title:
+      pl: "Yocto Project - stwórzmy własną dystrybucję Linuksa dla systemu wbudowanego! "
+    desc:
+      pl: "<p>Projekt Yocto jest otwartoźródłowym środowiskiem do tworzenia własnej dystrybucji Linuksa. Dzięki wygodzie korzystania z niego w dużych zespołach oraz wspieraniu przez niego wiele architektur procesorów jest obecnie szeroko stosowany w przemyśle do tworzenia systemów wbudowanych.</p><p>Podczas tej prelekcji przedstawione zostaną podstawy pracy w środowisku oferowanym przez Projekt Yocto oraz jego wady i zalety. Wszystko to pokazane będzie na przykładzie “wypiekania” na platformę Raspberry Pi własnej dystrybucji Linuksa, która zawiera napisaną przez nas testową aplikację.</p>"
+    author: "Marcin Słoniewski"
+    lang: "[pl]"
+    photo: "img/ludzie/sloniewski.webp"
+  - id: p2
+    time: "11:00-12:00"
+    title:
+      pl: "Usually Slightly Broken (USB) devices and what you can do with them? "
+      en: "Usually Slightly Broken (USB) devices and what you can do with them? "
+    desc:
+      pl: "<p>USB is definitely the most popular external interface. Thousands of people are using it every day and many of them have problems with it. Driver not found, incorrect driver bound, kernel oops are just examples of common problems which we are all facing. How to solve them or at least debug? If you’d like to find out, then this talk is exactly for you!</p><p>We start with a gentle introduction to the USB protocol itself. Then standard Linux host side infrastructure will be discussed. How drivers are chosen? How can we modify matching rules of a particular driver? That's only couple of questions which will be answered in this part. Final part is an introduction to USB communication sniffing. Krzysztof will show how to monitor and analyze USB traffic without expensive USB analyzers. </p>"
+    author: "Krzysztof Opasiak"
+    lang: "[pl]"
+    photo: "img/ludzie/opasiak.webp"
+  - id: p3
+    time: "12:00-13:00"
+    title:
+      pl: "Przyrządzanie koszernych paczek RPM i DEB dla zajętych "
+    desc:
+      pl: "<p>Pakiety RPM i DEB nie rosną na drzewach, więc zanim znajdą się w dystrybucji, ktoś je musi zbudować i opublikować. Wykład pokaże, jak przygotować paczkę binarną i jak ją dostarczyć za pomocą repozytoriów APT i Yum.</p>"
+    author: "Stanisław Klekot"
+    lang: "[pl]"
+    photo: "img/ludzie/klekot.webp"
+  - id: lunch
+    time: "13:00-14:00"
+    title:
+      pl: "Przerwa obiadowa"
+      en: "Lunch break"
+    desc:
+      pl: ""
+  - id: p5
+    time: "14:00-15:00"
+    title:
+      pl: "Jak uprzykrzyć życie włamywacza wykorzystując narzędzia systemów GNU/Linux "
+    desc:
+      pl: "<p>Zarządy firm z reguły reagują \"wysypką\" na potrzebę inwestycji w bezpieczeństwo organizacji. \"Security\" nie bez powodu kojarzone jest z dużymi wydatkami na szkolenia, sprzęt i technologię których, koniec końców, nikt nie rozumie, a co gorsze, nie potrafi poprawnie skonfigurować.</p><p>Chciałbym pokazać, jak można wykorzystać wachlarz narzędzi zawartych w dystrybucjach GNU/Linux oraz kliku zagrywek socjotechnicznych, aby bez potrzeby ponoszenia sporych kosztów, uprzykrzyć życie potencjalnego włamywacza.</p>"
+    author: "Marcin Tomków"
+    lang: "[pl]"
+    photo: "img/ludzie/tomkow.webp"
+  - id: p6
+    time: "15:00-16:00"
+    title:
+      pl: "Flatpak - nowoczesna dystrybucja programów "
+    desc:
+      pl: "<p>Klasyczny model dystrybucji oprogramowania, scentralizowany w samych dystrybucjach Linuksa, nie jest pozbawiony wad. Nieograniczone uprawnienia programów, nieistniejący wpływ programistów na opiekunów, ignorowanie małych projektów to tylko niektóre z problemów, które można wytknąć standardowym dystrybucjom. Przez ostatnie lata pojawiło się kilka narzędzi, starających się zagarnąć swój kawałek tortu w temacie uniwersalnych pakietów.</p><p>Dlaczego Flatpak wydaje się być faworytem, jak działa, w jaki sposób ułatwia to życie klasycznym dystrybucjom i zwykłym użytkowników oraz jak stworzyć własny pakiet – na te pytanie odpowie nasza prezentacja.</p>"
+    author: "Bartłomiej Piotrowski, Michał Rostecki"
+    lang: "[pl]"
+    photo: "img/ludzie/piotrowski.webp"
+  - id: p7
+    time: "16:00-17:00"
+    title:
+      pl: "Systemd: Poza strefą komfortu "
+    desc:
+      pl: "<p>W trakcie tej prezentacji chciałbym wam pokazać do czego można użyć systemd poza funkcjami, z których jest najbardziej popularny (vide: init - system). Część tych dodatkowych funkcji jest mało popularna lub też zastępuje dotychczas używane i znane rozwiązania - stąd też tytułowe nawiązanie do opuszczenia strefy komfortu. Postaram się omówić w jaki sposób korzystać z dystrybucji zawierających systemd w Google Cloudzie czy AWSie.</p>"
+    author: "Maciej Lasyk"
+    lang: "[pl]"
+    photo: "img/ludzie/lasyk.webp"
+  - id: lightning
+    time: "17:00-18:00"
+    title:
+      pl: "Lightning talks "
+      en: "Lightning talks "
+    desc:
+      pl: ""
+      en: ""
+    lang: "[pl]"
+    photo: ""
+sunday:
+  - id: lpi
+    time: "08:30-09:45"
+    title:
+      pl: "<i>Egzamin LPI</i>"
+      en: "<i>LPI Exam</i>"
+    desc:
+      pl: ""
+    photo: "img/loga/logo-lpi.webp"
+  - id: p1
+    time: "10:00-11:00"
+    title:
+      pl: "DevOps Tools Explained: Update Your Arsenal "
+    desc:
+      pl: "<p>Buzzword like cloud, container, deployment, continuous delivery or configuration automation are rampant in the media these days. This keynote explains what's behind these terms, how they relate to each other and what they mean for the daily job of system administrators and software developers. We will also discuss which technologies provide an actual benefit for technicians and how to approach and learn them.</p>"
+    author: "Fabian Thorns / <b>LPI</b>"
+    lang: "[en]"
+    photo: "img/ludzie/unknown.webp"
+  - id: p2
+    time: "11:00-12:00"
+    title:
+      pl: "Linux i oszczędzanie energii "
+    desc:
+      pl: "<p>Mechanizmy zwiazane z oszczędzaniem energii, a ściślej mówiąc z zapobieganiem traceniu energii bez potrzeby, są ważną częścią Linuksa od ponad 10 lat.  Ogólnie można podzielić je na dwie grupy, te działające jednocześnie na cały system (system-wide PM) oraz te operujące pojedynczymi składnikami systemu, takimi jak procesory i urządzenia wejścia-wyjścia, w stanie aktywności (working-state PM). Do pierwszej grupy należą usypianie systemu (system suspend) i hibernacja, natomiast druga grupa obejmuje między innymi skalowanie wydajności procesorów (CPU performance scaling) oraz wykrywanie nieaktywności i wprowadzanie nieaktywnych (idle) składników systemu do stanów o ograniczonym poborze mocy (low-power states). Mechanizmy z drugiej grupy, poza swoim głównym zastosowaniem, mogą także służyć do zapobiegania przegrzewaniu się urządzeń, bądź zapobiegania przekraczaniu budżetów energetycznych lub limitów poboru mocy przy jednoczesnym zapewnieniu wykonania określonych operacji w zadanym czasie.</p><p>W prezentacji przedstawię przegląd mechanizmów z dziedziny power management znajdujących się w jądrze Linuksa oraz omówię ich działanie i sposoby wykorzystania, a także wyzwania, z jakimi ta dziedzina musi się mierzyć w związku z obecnymi trendami w rozwoju technologii.</p>"
+    author: "Rafał Wysocki"
+    lang: "[pl]"
+    photo: "img/ludzie/wysocki.webp"
+  - id: p3
+    time: "12:00-13:00"
+    title:
+      pl: "Windows 10 uruchamia natywne programy z Linuksa. Bash on Ubuntu on Windows "
+    desc:
+      pl: "<p>W zeszłym roku Microsoft zaskoczył wiele osób ogłaszając Bash on Ubuntu on Windows. Projekt obiecywał uruchamianie niezmodyfikowanych linuksowych narzędzi deweloperskich w systemie Windows 10, bez użycia wirtualnej maszyny.</p><p>Jednak czy tylko narzędzia deweloperskie? Jak działa i co właściwie potrafi Windows Subsystem for Linux? W końcu mowa tu o >>niezmodyfikowanych<< programach.</p><p>Prelekcja wprowadzi w rozwiązania techniczne stojące za WSL, zademonstruje jego możliwości z punktu widzenia dewelopera jak i zwykłego użytkownika oraz odpowie na pytanie czy Microsoft łamie licencję GNU GPL nie udostępniając kodów źródłowych jądra systemu Windows ;)</p>"
+    author: "Kajetan Krykwiński"
+    lang: "[pl]"
+    photo: "img/ludzie/krykwinski.webp"
+  - id: lunch
+    time: "13:00-14:00"
+    title:
+      pl: "Przerwa obiadowa"
+      en: "Lunch break"
+    desc:
+      pl: ""
+    photo: ""
+  - id: p5
+    time: "14:00-15:00"
+    title:
+      pl: "CDS - simple, scalable, powerful CI/CD solution "
+    desc:
+      pl: "<p>Nowadays, the automation is a compulsory part of every IT project, either in big company or just small start-up. Reliable and scalable solution for tasks automation is always desirable - and this is what the CDS was designed for. During the presentation, I would like to introduce the CDS - describe its basic concepts, as well as how to set and use it. Please, join for an overview! </p>"
+    author: "Szymon Datko / <b>OVH.pl</b>"
+    lang: "[en]"
+    photo: "img/ludzie/datko.webp"
+  - id: p6
+    time: "15:00-16:00"
+    title:
+      pl: "The practical aspects of YOCTO "
+    desc:
+      pl: "Nie chcę podchodzić do tematu YOCTO z typowym opisem detali technicznych. Zamiast tego, korzystając z mojego doświadczenia w zakresie konfiguracji i integracji oprogramowania, chciałbym zaprezentować kilka anegdot, przedstawiających zyski jakie można osiągnąć z użycia YOCTO w projekcie oraz jakie problemy YOCTO pomoże faktycznie rozwiązać."
+      en: "I do not want to approach the subject from a usual perspective covering technical details. Instead, based on my experience from software configuration and integration, I will present stories showing how projects can profit from YOCTO and which problems YOCTO can help solve."
+    author: "Marcin Gudajczyk / <b>Nokia</b>"
+    lang: "[en]"
+    photo: "img/ludzie/gudajczyk.webp"
+  - id: p7
+    time: "16:00-17:00"
+    title:
+      pl: "Interfejsy sieciowe w Linuksie - wprowadzenie do czarnej magii "
+    desc:
+      pl: "<p>Podstawowe interfejsy sieciowe w Linuksie dotyczą fizycznych kart sieciowych, modemów, jak i tzw. pętli zwrotnej. Trochę bardziej zaawansowane wykorzystanie pozwala uruchomić VPNy i VLANy. Ale na tym się nie kończy. Mosty, czy interfejsy połączeń splątanych pozwalają uzyskać ciekawe efekty w działaniu sieci. To będzie małe wprowadzenie to tej części magii sieci na Linuksie.</p>"
+    author: "Jakub Juszczakiewicz"
+    lang: "[pl]"
+    photo: "img/ludzie/siewca.webp"

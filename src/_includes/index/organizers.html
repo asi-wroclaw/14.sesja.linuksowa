@@ -1,7 +1,10 @@
-<div id="con-organizatorzy" class="con-bg">
+{% assign has_patrons = site.data.patrons.patrons.size > 0 %}
+{% assign organizers = site.data.organizers.organizers %}
+<div id="con-organizatorzy" class="con-bg" {% unless has_patrons %} style="background-color: #EEE;" {% endunless %}>
     <span id="organizatorzy" class="anchor-jump-link"></span>
     <div class="con-content">
-        <h2 class="bg-text">{{ t.navigation.orgs }}</h2>
+        {% assign nav = site.data.navigation.navigation %}
+        <h2 class="bg-text">{{ nav.orgs[page.lang] | default: nav.orgs.pl }}</h2>
         <h2 class="spacer">&nbsp;</h2>
         <div class="loga">
             <div class="logo-asi">
@@ -11,18 +14,11 @@
             </div>
         </div>
         <div class="loga organizatorzy">
-            <a href="https://www.pwr.edu.pl" target="_blank" rel="noopener noreferrer">
-                <img src="{{ '/img/loga/logo-pwr.webp' | relative_url }}" />
+            {% for organizer in organizers %}
+            <a href="{{ organizer.url }}" target="_blank" rel="noopener noreferrer">
+                <img src="{{ organizer.logo | relative_url }}" alt="{{ organizer.name }}" />
             </a>
-            <a href="https://manus.pl" target="_blank" rel="noopener noreferrer">
-                <img src="{{ '/img/loga/logo-manus.webp' | relative_url }}" />
-            </a>
-            <a href="https://wireless-group.pwr.wroc.pl/" target="_blank" rel="noopener noreferrer">
-                <img src="{{ '/img/loga/logo-wg.webp' | relative_url }}" />
-            </a>
-            <a href="https://wireless-group.pwr.wroc.pl/" target="_blank" rel="noopener noreferrer">
-                <img src="{{ '/img/loga/logo-nomad.webp' | relative_url }}" />
-            </a>
+            {% endfor %}
         </div>
     </div>
 </div>

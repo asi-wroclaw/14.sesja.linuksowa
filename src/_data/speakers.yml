@@ -1,0 +1,79 @@
+speakers:
+  - id: p1
+    name: "Krzysztof Opasiak"
+    photo: "img/ludzie/opasiak.webp"
+    content:
+      pl: "Krzysztof is a PhD student at Warsaw University of Technology. He works as Kernel and System Developer at Samsung R&D Institute Poland. Since 2013 involved in USB support development in Tizen OS.<br/>Maintainer of libusbgx - library for USB gadgets management through ConfigFS. Open Source enthusiast and speaker at several Linux and Open Source Conferences. "
+  - id: p2
+    name: "Marcin Tomków"
+    photo: "img/ludzie/tomkow.webp"
+    content:
+      pl: "Senior Lead Administrator systemów *NIX, GNU/Linux w firmie NetworkedAssets Sp. z o.o. Dwunastoletnie doświadczenie w branży IT. Entuzjasta i propagator wolnego oprogramowania. Interesuje się wykorzystaniem i implementacją nowoczesnych technologii w budowie centrum danych i administracji serwerami. Na bieżąco śledzi najnowsze trendy w tej dziedzinie. Apple Fanboy."
+  - id: p3
+    name: "Rafał Wysocki"
+    photo: "img/ludzie/wysocki.webp"
+    content:
+      pl: "Opiekun podsystemów PM i ACPI  w jądrze Linuksa. Pracuje w Intel Open Source Technology Center, gdzie zajmuje się głównie rozwiązywaniem problemów związanych z jądrem Linuksa.<br />W roku 1996 ukończył studia magisterskie z fizyki teoretycznej  na Wydziale Fizyki Uniwersytetu Warszawskiego, a w roku 2002 uzyskał stopień naukowy doktora w dziedzinie fizyki na tym samym wydziale."
+  - id: p4
+    name: "Marcin Słoniewski"
+    photo: "img/ludzie/sloniewski.webp"
+    content:
+      pl: "Absolwent kierunku Automatyka i Robotyka na wydziale Elektroniki Politechniki Wrocławskiej. Obecnie zatrudniony w firmie Pruftechnik Technology, gdzie zajmuje się rozwojem systemów wbudowanych dla diagnostyki maszyn przemysłowych."
+  - id: p5
+    name: "Stanisław Klekot"
+    photo: "img/ludzie/klekot.webp"
+    content:
+      pl: "Sezonowany administrator/programista systemowy. Większą część czasu poświęca na budowanie narzędzi, których później używa do budowania narzędzi i zarządzania serwerami."
+  - id: p6
+    name: "Fabian Thorns"
+    photo: "img/ludzie/unknown.webp"
+    content:
+      pl: "Fabian Thorns is the Director of Certification Development at Linux Professional Institute, LPI. He is M.Sc. Business Information Systems, a regular speaker at open source events and the author of numerous articles and books."
+      en: "Fabian Thorns is the Director of Certification Development at Linux Professional Institute, LPI. He is M.Sc. Business Information Systems, a regular speaker at open source events and the author of numerous articles and books."
+  - id: p7
+    name: "Bartłomiej Piotrowski"
+    photo: "img/ludzie/piotrowski.webp"
+    content:
+      pl: "Złota rączka w dystrybucji Arch Linux, zawodowo inżynier wdrożeń OpenStacka"
+  - id: p8
+    name: "Michał Rostecki"
+    photo: "img/ludzie/unknown.webp"
+    content:
+      pl: "Developer, widoczny głównie w community Kubernetesa, dawniej udzielający się w OpenStacku"
+  - id: p9
+    name: "Maciej \"docent\" Lasyk"
+    photo: "img/ludzie/lasyk.webp"
+    content:
+      pl: "Absolwent AGH w Krakowie, administrator w firmie Ocado w wolnym czasie rozwijający dystrybuję Fedora oraz zapalony cyklista."
+  - id: p10
+    name: "Jakub \"Siewca\" Juszczakiewicz"
+    photo: "img/ludzie/siewca.webp"
+    content:
+      pl: "Zażarty użytkownik systemów operacyjnych GNU/Linux, programista z zawodu, admin z zamiłowania. Po za IT lubi jeździć na rowerze i na nartach, oraz pływać pod żaglami jak i wpław."
+  - id: p11
+    name: "Kajetan \"kitor\" Krykwiński"
+    photo: "img/ludzie/krykwinski.webp"
+    content:
+      pl: "Inżynier integracji oprogramowania w firmie Nokia, były wiceprezes Akademickiego Stowarzyszenia Informatycznego, absolwent PWR. <br />Linuksa na serwerach używa od kilkunastu lat, jednocześnie nie znosząc go jako system desktopowy."
+      en: "SCM Engineer at Nokia, former vice-chairman of Academic IT Association, graduate of Wroclaw University of Science and Technology.<br />Uses Linux as server environment for years, at the same time hating it as desktop system."
+  - id: p12
+    name: "Szymon Datko"
+    photo: "img/ludzie/datko.webp"
+    content:
+      pl: "DevOps at OVH.pl - daily, PhD student at Wrocław University of Science and Technology - occasionally, Dungeon Master - in free time, IKEA's furniture assembling lover - anytime :-) "
+  - id: p13
+    name: "Marcin Gudajczyk"
+    photo: "img/ludzie/gudajczyk.webp"
+    content:
+      pl: "Pracuję dla NOKII od ponad pięciu lat w zakresie tematów związanych z SCM. Interesuję się kilkoma tematami, w szczególności astronomią, książkami sci-fi, historią oraz grami video."
+      en: "I work for NOKIA for over 5 years within SCM related areas. I have few interests here and there, especially in astronomy, sci-fi books, history and video games."
+  - id: p14
+    name: "Patryk Czajkowski"
+    photo: "img/ludzie/czajkowski.webp"
+    content:
+      pl: "Elektronik, DevOps. Zawodowo wieloletnio zwiazany z IoT od strony SW jak i HW, Aktywny uzytkownik Yocto. W wolnych chwilach pasjonat elektroniki i druku 3D"
+  - id: p15
+    name: "Łukasz Gardoń"
+    photo: "img/ludzie/gardon.webp"
+    content:
+      pl: "Student Politechniki Wrocławskiej pajsonat Linuksa, wolnego oprogramowania oraz systemów wbudowanych. Miłośnik wypraw rowerowych. "

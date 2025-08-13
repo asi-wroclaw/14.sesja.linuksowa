@@ -1,20 +1,14 @@
+{% assign about = site.data.about.about %}
 <div id="con-about" class="con-bg">
     <span id="about" class="anchor-jump-link"></span>
     <div class="con-content">
+        {% for section in about %}
         <div class="third">
-            <img alt="{{ t.about.p1.header }}" src="{{ '/img/ikony/coTo.webp' | relative_url }}" width="300" height="300" />
-            <h2>{{ t.about.p1.header }}</h2>
-            <p>{{ t.about.p1.content }}</p>
+            <img alt="{{ section.header[page.lang] | default: section.header.pl }}"
+                src="{{ section.icon | relative_url }}" width="300" height="300" />
+            <h2>{{ section.header[page.lang] | default: section.header.pl }}</h2>
+            <p>{{ section.content[page.lang] | default: section.content.pl }}</p>
         </div>
-        <div class="third">
-            <img alt="{{ t.about.p2.header }}" src="{{ '/img/ikony/jakWyglada.webp' | relative_url }}" width="300" height="300" />
-            <h2>{{ t.about.p2.header }}</h2>
-            <p>{{ t.about.p2.content }}</p>
-        </div>
-        <div class="third">
-            <img alt="{{ t.about.p3.header }}" src="{{ '/img/ikony/cel.webp' | relative_url }}" width="300" height="300" />
-            <h2>{{ t.about.p3.header }}</h2>
-            <p>{{ t.about.p3.content }}</p>
-        </div>
+        {% endfor %}
     </div>
 </div>

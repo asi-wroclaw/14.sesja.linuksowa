@@ -1,8 +1,13 @@
+{% assign footer = site.data.footer.footer %}
 <div id="con-footer" class="con-bg">
     <div class="con-content">
         © 2016
-        <a href="https://asi.wroclaw.pl" target="_blank" rel="noopener noreferrer">{{ t.asi }}</a>
+        <a href="https://asi.wroclaw.pl" target="_blank" rel="noopener noreferrer">
+            {{ footer.asi[page.lang] | default: footer.asi.pl }}
+        </a>
         |
-        <a href="https://pwr.edu.pl" target="_blank" rel="noopener noreferrer">{{ t.pwr }}</a>
+        <a href="https://pwr.edu.pl" target="_blank" rel="noopener noreferrer">
+            {{ footer.pwr[page.lang] | default: footer.pwr.pl }}
+        </a>
     </div>
 </div>

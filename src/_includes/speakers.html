@@ -1,20 +1,15 @@
-{% if t_pl.speakers %}
 <div id="con-prelegenci" class="con-bg">
     <span id="prelegenci" class="anchor-jump-link"></span>
     <div class="con-content">
-        <h2 class="bg-text">{{ t.navigation.speakers }}</h2>
+        {% assign nav = site.data.navigation.navigation %}
+        <h2 class="bg-text">{{ nav.speakers[page.lang] | default: nav.speakers.pl }}</h2>
         <h2 class="spacer">&nbsp;</h2>
-        {% for i in (1..15) %}
-        {% assign key = 'p' | append: i %}
-        {% assign speaker = t_pl.speakers[key] %}
-        {% if speaker.name %}
+        {% for speaker in site.data.speakers.speakers %}
         <div class="third">
             <img src="{{ speaker.photo | relative_url }}" alt="{{ speaker.name }}" />
             <h3>{{ speaker.name }}</h3>
-            <span>{{ t.speakers[key].content | default: speaker.content }}</span>
+            <span>{{ speaker.content[page.lang] | default: speaker.content.pl }}</span>
         </div>
-        {% endif %}
         {% endfor %}
     </div>
 </div>
-{% endif %}
