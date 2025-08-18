@@ -1,3 +1,5 @@
+{% assign navigation = site.data.navigation.navigation %}
+{% assign labels = site.data.agenda.labels %}
 <div id="con-agenda" class="con-bg">
     <span id="agenda" class="anchor-jump-link"></span>
     <div class="con-content">
@@ -29,8 +31,8 @@
             {% endfor %}
         </div>
         <div class="extended-link">
-            <a href="{{ t.navigation.agenda_url | relative_url }}">
-                {{ site.data.agenda.labels.extended_text[page.lang] }}
+            <a href="{{ navigation.agenda_url[page.lang] | relative_url }}">
+                {{ labels.extended_text[page.lang] }}
             </a>
         </div>
     </div>

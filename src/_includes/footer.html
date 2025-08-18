@@ -1,13 +1,9 @@
-{% assign footer = site.data.footer.footer %}
+{% assign meta = site.data.common.meta %}
 <div id="con-footer" class="con-bg">
     <div class="con-content">
-        © 2016
+        © {{ meta.year }}
         <a href="https://asi.wroclaw.pl" target="_blank" rel="noopener noreferrer">
-            {{ footer.asi[page.lang] | default: footer.asi.pl }}
-        </a>
-        |
-        <a href="https://pwr.edu.pl" target="_blank" rel="noopener noreferrer">
-            {{ footer.pwr[page.lang] | default: footer.pwr.pl }}
+            {{ meta[page.lang].author | default: meta.pl.author }}
         </a>
     </div>
 </div>

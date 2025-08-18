@@ -1,4 +1,6 @@
 {% assign patrons = site.data.patrons.patrons %}
+{% assign has_patrons = patrons.size > 0 %}
+{% if has_patrons %}
 <div id="con-patroni" class="con-bg">
     <span id="patroni" class="anchor-jump-link"></span>
     <div class="con-content">
@@ -14,3 +16,4 @@
         </div>
     </div>
 </div>
+{% endif %}
