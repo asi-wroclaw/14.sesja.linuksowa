@@ -1,19 +1,32 @@
 {% assign patrons = site.data.patrons.patrons %}
+{% assign nav = site.data.navigation.navigation %}
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].patrons | default: bgs.default.patrons %}
+
 {% assign has_patrons = patrons.size > 0 %}
 {% if has_patrons %}
-<div id="con-patroni" class="con-bg">
+<div id="con-patroni" class="con-bg" style="background-color: {{ section_bg }};">
     <span id="patroni" class="anchor-jump-link"></span>
     <div class="con-content">
-        {% assign nav = site.data.navigation.navigation %}
         <h2 class="bg-text">{{ nav.patrons[page.lang] | default: nav.patrons.pl }}</h2>
         <h2 class="spacer">&nbsp;</h2>
+        {% for group in patrons %}
         <div class="loga patroni">
-            {% for patron in patrons %}
-            <a href="{{ patron.url }}" target="_blank" rel="noopener noreferrer">
+            {% for patron in group.patrons %}
+            <a href="{{ patron.url }}" target="_blank" rel="noopener noreferrer" {% if edition == 13 %}class="loga-patroni-13a"{% endif %}>
                 <img class="third" src="{{ patron.logo | relative_url }}" />
             </a>
             {% endfor %}
         </div>
+        {% endfor %}
+
+        {% if edition == 13 %}
+        <div class="patronaty-honorowe" style="margin-top:2em; text-align:center; font-weight:bold;">
+            Patronat honorowy Rektora Politechniki Wrocławskiej<br>
+            Patronat honorowy Przewodniczącego Klastra ICT
+        </div>
+        {% endif %}
     </div>
 </div>
 {% endif %}

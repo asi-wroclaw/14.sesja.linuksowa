@@ -1,5 +1,9 @@
 {% assign youtube = site.data.common.youtube %}
-<div id="con-live" class="con-bg">
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].live | default: bgs.default.live %}
+
+<div id="con-live" class="con-bg" style="background-color: {{ section_bg }};">
     <span id="live" class="anchor-jump-link"></span>
     <div class="con-content">
         {% assign live = site.data.live.live %}

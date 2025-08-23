@@ -1,17 +1,19 @@
 patrons:
-  - id: programista
-    name: "Programista Magazyn"
-    url: "https://programistamag.pl/"
-    logo: "img/loga/patron-programista.webp"
-  - id: chip
-    name: "Chip"
-    url: "https://chip.pl"
-    logo: "img/loga/patron-chip.webp"
-  - id: hs
-    name: "Hackerspace Wroclaw"
-    url: "https://www.hswro.org/"
-    logo: "img/loga/patron-hs.webp"
-  - id: pdasite
-    name: "PDASite"
-    url: "https://pdasite.pl"
-    logo: "img/loga/patron-pdasite.webp"
+  - group:
+    patrons:
+    - id: programista
+      name: "Programista Magazyn"
+      url: "https://programistamag.pl/"
+      logo: "img/loga/patron-programista.webp"
+    - id: chip
+      name: "Chip"
+      url: "https://chip.pl"
+      logo: "img/loga/patron-chip.webp"
+    - id: hs
+      name: "Hackerspace Wroclaw"
+      url: "https://www.hswro.org/"
+      logo: "img/loga/patron-hs.webp"
+    - id: pdasite
+      name: "PDASite"
+      url: "https://pdasite.pl"
+      logo: "img/loga/patron-pdasite.webp"

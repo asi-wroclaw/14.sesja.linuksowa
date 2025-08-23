@@ -1,5 +1,9 @@
 {% assign about = site.data.about.about %}
-<div id="con-about" class="con-bg">
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].about | default: bgs.default.about %}
+
+<div id="con-about" class="con-bg" style="background-color: {{ section_bg }};">
     <span id="about" class="anchor-jump-link"></span>
     <div class="con-content">
         {% for section in about %}

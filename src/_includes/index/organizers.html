@@ -1,9 +1,12 @@
-{% assign has_patrons = site.data.patrons.patrons.size > 0 %}
 {% assign organizers = site.data.organizers.organizers %}
-<div id="con-organizatorzy" class="con-bg" {% unless has_patrons %} style="background-color: #EEE;" {% endunless %}>
+{% assign nav = site.data.navigation.navigation %}
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].organizers | default: bgs.default.organizers %}
+
+<div id="con-organizatorzy" class="con-bg" style="background-color: {{ section_bg }};">
     <span id="organizatorzy" class="anchor-jump-link"></span>
     <div class="con-content">
-        {% assign nav = site.data.navigation.navigation %}
         <h2 class="bg-text">{{ nav.orgs[page.lang] | default: nav.orgs.pl }}</h2>
         <h2 class="spacer">&nbsp;</h2>
         <div class="loga">

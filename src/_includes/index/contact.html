@@ -1,11 +1,14 @@
-{% assign has_patrons = site.data.patrons.patrons.size > 0 %}
-<div id="con-kontakt" class="con-bg" {% unless has_patrons %} style="background-color: #FFF;" {% endunless %}>
+{% assign contact = site.data.contact.contact %}
+{% assign nav = site.data.navigation.navigation %}
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].contact | default: bgs.default.contact %}
+
+<div id="con-kontakt" class="con-bg" style="background-color: {{ section_bg }};">
     <span id="kontakt" class="anchor-jump-link"></span>
     <div class="con-content">
-        {% assign nav = site.data.navigation.navigation %}
         <h2 class="bg-text">{{ nav.contact[page.lang] | default: nav.contact.pl }}</h2>
         <h2 class="spacer">&nbsp;</h2>
-        {% assign contact = site.data.contact.contact %}
         <h2 style="margin: 100px 0px;">{{ contact.text[page.lang] | default: contact.text.pl }}</h2>
     </div>
 </div>

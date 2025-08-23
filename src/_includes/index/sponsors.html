@@ -1,15 +1,19 @@
 {% assign sponsors = site.data.sponsors.sponsors %}
-<div id="con-sponsorzy" class="con-bg">
+{% assign nav = site.data.navigation.navigation %}
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].sponsors | default: bgs.default.sponsors %}
+
+<div id="con-sponsorzy" class="con-bg" style="background-color: {{ section_bg }};">
     <span id="sponsorzy" class="anchor-jump-link"></span>
     <div class="con-content">
-        {% assign nav = site.data.navigation.navigation %}
         <h2 class="bg-text">{{ nav.sponsors[page.lang] | default: nav.sponsors.pl }}</h2>
         <h2 class="spacer">&nbsp;</h2>
         <div class="loga">
             {% for sponsor in sponsors %}
             <div class="logo-{{ sponsor.id }}">
                 <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">
-                    <img src="{{ sponsor.logo | relative_url }}" />
+                    <img src="{{ sponsor.logo | relative_url }}"{% if sponsor.width %} width="{{ sponsor.width }}"{% endif %} />
                 </a>
             </div>
             {% endfor %}

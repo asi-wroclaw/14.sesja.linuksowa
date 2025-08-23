@@ -685,6 +685,12 @@ a img {
   padding-bottom: 2em;
 }
 
+/* 13th edition override */
+.loga-patroni-13a {
+  padding: 0 0.5em;
+}
+/* 13th edition override end */
+
 .loga.patroni img {
   max-height: 8em;
   vertical-align: middle;

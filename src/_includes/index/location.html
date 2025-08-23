@@ -1,5 +1,9 @@
 {% assign location = site.data.location.location %}
-<div id="con-dojazd" class="con-bg">
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].location | default: bgs.default.location %}
+
+<div id="con-dojazd" class="con-bg" style="background-color: {{ section_bg }};">
     <span id="dojazd" class="anchor-jump-link"></span>
     <div class="con-content">
         {% assign nav = site.data.navigation.navigation %}

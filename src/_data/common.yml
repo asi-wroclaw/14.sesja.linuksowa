@@ -27,3 +27,31 @@ map:
 youtube:
   playlist_id: "PLTvZBPQxCI8E02vvjWjyzS_r3Snanol2g"
 
+backgrounds:
+  default:
+    hero: "#FFF"
+    about: "#FFF"
+    live: "#EEE"
+    agenda: "#FFF"
+    speakers: "#EEE"
+    location: "#FFF"
+    sponsors: "#FFF"
+    patrons: "#EEE"
+    organizers: "#FFF"
+    contact: "#EEE"
+  editions:
+    13:
+      hero: "#FFF"
+      about: "#EEE"
+      live: "#FFF"
+      agenda: "#FFF"
+      speakers: "#EEE"
+      location: "#FFF"
+      sponsors: "#EEE"
+      patrons: "#EEE"
+      organizers: "#FFF"
+      ourteam: "#EEE"
+      contact: "#FFF"
+    15:
+      organizers: "#EEE"
+      contact: "#FFF"

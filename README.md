@@ -79,6 +79,6 @@ bundle ui
 
 To configure the site, update the following files:
 
-- `_config.yml` — Set the site title, description, URL, and base URL.
+- `_config.yml` — Set the site title, description, URL, base URL, and edition.
 - `src/_data/*` — Edit texts, translations, speaker information, and agenda data.
 - `src/img/*` — Add speaker photos and images for partners and sponsors.

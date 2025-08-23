@@ -1,6 +1,10 @@
 {% assign navigation = site.data.navigation.navigation %}
 {% assign labels = site.data.agenda.labels %}
-<div id="con-agenda" class="con-bg">
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].agenda | default: bgs.default.agenda %}
+
+<div id="con-agenda" class="con-bg" style="background-color: {{ section_bg }};">
     <span id="agenda" class="anchor-jump-link"></span>
     <div class="con-content">
         <h2 class="bg-text">Agenda</h2>

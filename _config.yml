@@ -8,6 +8,8 @@ url: "https://14.sesja.linuksowa.pl"
 
 # baseurl: "" (default) or "/<url>" if using as a collective part on one domain e.g. "edycje.linuksowa.pl/14"
 baseurl: ""
+# edition must be integer
+edition: 14
 
 # Directory configuration
 source: src

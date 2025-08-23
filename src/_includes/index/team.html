@@ -1,0 +1,23 @@
+{% assign team = site.data.team.team %}
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].ourteam | default: bgs.default.ourteam %}
+
+{% if edition == 13 %}
+<div class="con-bg" id="con-naszzespol" style="background-color: {{ section_bg }};">
+  <span class="anchor-jump-link" id="naszzespol"></span>
+  <div class="con-content">
+    <h2 class="bg-text">Nasz zespół</h2>
+    <h2 class="spacer">&nbsp;</h2>
+    <div class="team-members">
+      {% for member in team %}
+      <div class="third">
+        <img src="{{ member.img | relative_url }}" alt="{{ member.name }}" />
+        <h3>{{ member.name }}</h3>
+        {% if member.role %}<span class="funkcja">{{ member.role }}</span>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}

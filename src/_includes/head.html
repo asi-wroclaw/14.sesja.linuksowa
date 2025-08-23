@@ -1,6 +1,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
+<meta name="base-url" content="{{ site.baseurl }}" />
+<meta name="jekyll-edition" content="{{ site.edition }}" />
 
 {% assign lang = page.lang | default: site.default_lang %}
 {% assign meta = site.data.common.meta[lang] %}
@@ -9,7 +11,6 @@
 <meta name="keywords" content="{{ meta.keywords }}" />
 <meta name="author" content="{{ meta.author }}" />
 
-<meta name="base-url" content="{{ site.baseurl }}" />
 <meta property="og:site_name" content="{{ meta.name }}" />
 <meta property="og:locale" content="{{ meta.locale }}" />
 <meta property="og:type" content="website" />
@@ -31,8 +32,11 @@
 <link rel="preload" as="image" href="{{ '/img/logo-duze-pl.webp' | relative_url }}" fetchpriority="high" />
 {% endif %}
 
-{% if page.layout == 'default' %}
+{% if page.layout == 'default' and site.edition != 13 %}
 <link rel="preload" as="image" href="{{ '/img/tla/1.webp' | relative_url }}" fetchpriority="high" />
+{% endif %}
+
+{% if page.layout == 'default' and site.edition != 12 %}
 <link rel="preload" as="image" href="{{ '/img/squares-empty.webp' | relative_url }}" />
 <link rel="preload" as="image" href="{{ '/img/squares-facebook.webp' | relative_url }}" />
 <link rel="preload" as="image" href="{{ '/img/squares-youtube.webp' | relative_url }}" />
