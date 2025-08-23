@@ -224,9 +224,14 @@ a img {
   max-height: 100%;
 }
 
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (SVG)
+ */
 #menu-button {
   display: none;
-  font-family: FontAwesome;
+  margin-left: auto;
+  height: 32px;
   font-size: 2em;
   padding: 0.5em;
   color: #323f49;

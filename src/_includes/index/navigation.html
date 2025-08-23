@@ -8,7 +8,10 @@
             <img src="{{ nav.logo.en | relative_url }}" width="639" height="161" />
             {% endif %}
         </a>
-        <span id="menu-button" class="fa-bars"></span>
+        <svg id="menu-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+            <path
+                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+        </svg>
         <div id="menu-container" class="mobile-hidden">
             <a href="#about">{{ nav.about[page.lang] }}</a>
             <a href="#live">{{ nav.live[page.lang] }}</a>
@@ -19,8 +22,7 @@
             <a href="#sponsorzy">{{ nav.sponsors[page.lang] }}</a>
             <a href="#kontakt">{{ nav.contact[page.lang] }}</a>
             <a class="lang-switch" href="{{ nav.lang_url[page.lang] | relative_url }}">
-                <img alt="" src="{{ nav.lang_flag[page.lang] | relative_url }}" width="300"
-                    height="188" />
+                <img alt="" src="{{ nav.lang_flag[page.lang] | relative_url }}" width="300" height="188" />
                 <span class="mobile-only">{{ nav.lang_text[page.lang] }}</span>
             </a>
         </div>
