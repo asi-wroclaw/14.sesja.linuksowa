@@ -1,6 +1,10 @@
-{% if site.data.common.features.lpi_enabled %}
 {% assign lpi = site.data.lpi.lpi %}
-<div id="con-lpi" class="con-bg">
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].lpi | default: bgs.default.lpi %}
+
+{% if edition == 14 %}
+<div class="con-bg" id="con-lpi" style="background-color: {{ section_bg }};">
     <span id="lpi" class="anchor-jump-link"></span>
     <div class="con-content">
         {% assign nav = site.data.navigation.navigation %}

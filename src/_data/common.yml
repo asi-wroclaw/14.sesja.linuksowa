@@ -15,10 +15,6 @@ meta:
     locale: "en_US"
     title: "14th Linux Session | 6th-7th May 2017 | Wrocław, Poland"
 
-features:
-  workshops_enabled: true
-  lpi_enabled: true
-
 map:
   bbox: "17.039,51.103,17.075,51.115"
   marker: "51.108830235544175,17.05674648284912"
@@ -52,6 +48,9 @@ backgrounds:
       organizers: "#FFF"
       ourteam: "#EEE"
       contact: "#FFF"
+    14:
+      workshops: "#EEE"
+      lpi: "#FFF"
     15:
       organizers: "#EEE"
       contact: "#FFF"

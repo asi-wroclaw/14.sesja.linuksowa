@@ -1,6 +1,10 @@
-{% if site.data.common.features.workshops_enabled %}
 {% assign workshops = site.data.workshops.workshops %}
-<div id="con-warsztaty" class="con-bg">
+{% assign edition = site.edition %}
+{% assign bgs = site.data.common.backgrounds %}
+{% assign section_bg = bgs.editions[edition].workshops | default: bgs.default.workshops %}
+
+{% if edition == 14 %}
+<div class="con-bg" id="con-warsztaty" style="background-color: {{ section_bg }};">
     <span id="warsztaty" class="anchor-jump-link"></span>
     <div class="con-content">
         {% assign nav = site.data.navigation.navigation %}
